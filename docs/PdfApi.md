@@ -189,6 +189,8 @@ Method | HTTP request | Description
 *PdfApi* | [**getWordsPerPage**](PdfApi.md#getWordsPerPage) | **GET** /pdf/\{name}/pages/wordCount | Get number of words per document page.
 *PdfApi* | [**getXfaPdfInStorageToAcroForm**](PdfApi.md#getXfaPdfInStorageToAcroForm) | **GET** /pdf/\{name}/convert/xfatoacroform | Converts PDF document which contains XFA form (located on storage) to PDF with AcroForm and returns resulting file response content
 *PdfApi* | [**getXmlInStorageToPdf**](PdfApi.md#getXmlInStorageToPdf) | **GET** /pdf/create/xml | Convert XML file (located on storage) to PDF format and return resulting file in response. 
+*PdfApi* | [**getXmpMetadataJson**](PdfApi.md#getXmpMetadataJson) | **GET** /pdf/\{name}/xmpmetadata/json | Gets document XMP Metadata as JSON.
+*PdfApi* | [**getXmpMetadataXml**](PdfApi.md#getXmpMetadataXml) | **GET** /pdf/\{name}/xmpmetadata/xml | Gets document XMP Metadata as XML file.
 *PdfApi* | [**getXpsInStorageToPdf**](PdfApi.md#getXpsInStorageToPdf) | **GET** /pdf/create/xps | Convert XPS file (located on storage) to PDF format and return resulting file in response. 
 *PdfApi* | [**getXslFoInStorageToPdf**](PdfApi.md#getXslFoInStorageToPdf) | **GET** /pdf/create/xslfo | Convert XslFo file (located on storage) to PDF format and return resulting file in response. 
 *PdfApi* | [**moveFile**](PdfApi.md#moveFile) | **PUT** /pdf/storage/file/move/\{srcPath} | Move file
@@ -258,6 +260,7 @@ Method | HTTP request | Description
 *PdfApi* | [**postSplitDocument**](PdfApi.md#postSplitDocument) | **POST** /pdf/\{name}/split | Split document to parts.
 *PdfApi* | [**postSplitRangePdfDocument**](PdfApi.md#postSplitRangePdfDocument) | **POST** /pdf/\{name}/splitrangepdf | Split document into ranges.
 *PdfApi* | [**postTextBoxFields**](PdfApi.md#postTextBoxFields) | **POST** /pdf/\{name}/fields/textbox | Add document text box fields.
+*PdfApi* | [**postXmpMetadata**](PdfApi.md#postXmpMetadata) | **POST** /pdf/\{name}/xmpmetadata | Add or remove XMP Metadata properties.
 *PdfApi* | [**putAddNewPage**](PdfApi.md#putAddNewPage) | **PUT** /pdf/\{name}/pages | Add new page to end of the document.
 *PdfApi* | [**putAddText**](PdfApi.md#putAddText) | **PUT** /pdf/\{name}/pages/\{pageNumber}/text | Add text to PDF document page.
 *PdfApi* | [**putAnnotationsFlatten**](PdfApi.md#putAnnotationsFlatten) | **PUT** /pdf/\{name}/annotations/flatten | Flattens the annotations of the specified types
@@ -4687,6 +4690,52 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: multipart/form-data
 
+<a name="getXmpMetadataJson"></a>
+## **getXmpMetadataJson**
+> \Aspose\PDF\Model\XmpMetadata getXmpMetadataJson($name, $folder, $storage, $pass_base64)
+
+Gets document XMP Metadata as JSON.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$folder** | **string** | The document folder. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+**$pass_base64** | **string** | The password (Base64). | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\XmpMetadata**](XmpMetadata.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getXmpMetadataXml"></a>
+## **getXmpMetadataXml**
+> \SplFileObject getXmpMetadataXml($name, $folder, $storage, $pass_base64)
+
+Gets document XMP Metadata as XML file.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$folder** | **string** | The document folder. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+**$pass_base64** | **string** | The password (Base64). | [optional]
+
+### Return type
+
+**\SplFileObject**
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: multipart/form-data
+
 <a name="getXpsInStorageToPdf"></a>
 ## **getXpsInStorageToPdf**
 > \SplFileObject getXpsInStorageToPdf($src_path, $storage)
@@ -6335,6 +6384,30 @@ Name | Type | Description  | Notes
 **$fields** | [**\Aspose\PDF\Model\TextBoxField[]**](TextBoxField.md) | The array of field. | 
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="postXmpMetadata"></a>
+## **postXmpMetadata**
+> \Aspose\PDF\Model\AsposeResponse postXmpMetadata($name, $metadata, $folder, $storage, $pass_base64)
+
+Add or remove XMP Metadata properties.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$metadata** | [**\Aspose\PDF\Model\XmpMetadata**](XmpMetadata.md) | XmpMetadata instance. | 
+**$folder** | **string** | The document folder. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+**$pass_base64** | **string** | The password (Base64). | [optional]
 
 ### Return type
 

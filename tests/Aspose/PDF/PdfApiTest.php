@@ -6009,4 +6009,56 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $response = $this->pdfApi->putCreatePdfFromLayer($name, 1, "output.pdf", "oc1", $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
+
+    //Xmp Metadata Tests
+
+    public function testGetXmpMetadataJson()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+
+        $response = $this->pdfApi->getXmpMetadataJson($name, $this->tempFolder);
+        $this->assertEquals(9, count($response->getProperties()));
+    }
+
+    public function testGetXmpMetadataXml()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+
+        $response = $this->pdfApi->getXmpMetadataXml($name, $this->tempFolder);
+        $this->assertGreaterThan(0, $response->getSize());
+    }
+
+    public function testPostXmpMetadata()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+
+        $date = '2024-10-27T09:59:52+02:00';
+        $metadata = new Aspose\PDF\Model\XmpMetadata(array(
+            'properties' => array(
+                # Modify Default property without prefix
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "ModifyDate", 'value' => $date)),
+                # Modify Default property with prefix
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "xmp:CreateDate", 'value' => $date)),
+                # Remove Default property
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "CreatorTool")),
+                # Add Default property
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "BaseURL", 'value' => "http://www.somename.com/path")),
+                # Remove User defined property
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "dc:title")),
+                # Update user defined property
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "pdf:Producer", 'value' => "Aspose.PDF Cloud", 'namespace_uri' => "http://ns.adobe.com/pdf/1.3/")),
+                # Add user defined property
+                new Aspose\PDF\Model\XmpMetadataProperty(array('key' => "pdf:Prop", 'value' => "PropValue", 'namespace_uri' => "http://ns.adobe.com/pdf/1.3/")),
+            )
+        ));
+        
+        $response = $this->pdfApi->postXmpMetadata($name, $metadata, $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+
+        $response = $this->pdfApi->getXmpMetadataJson($name, $this->tempFolder);
+        $this->assertEquals(9, count($response->getProperties()));
+    }
 }

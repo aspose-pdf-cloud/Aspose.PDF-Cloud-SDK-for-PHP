@@ -207,7 +207,7 @@ class ObjectSerializer
         if ($allowCollectionFormatMulti && ('multi' === $collectionFormat)) {
             // http_build_query() almost does the job for us. We just
             // need to fix the result of multidimensional arrays.
-            return preg_replace('/%5B[0-9]+%5D=/', '=', http_build_query($collection, '', '&'));
+            return $collection;
         }
         switch ($collectionFormat) {
             case 'pipes':

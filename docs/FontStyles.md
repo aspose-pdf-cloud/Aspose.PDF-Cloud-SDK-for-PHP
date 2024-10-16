@@ -4,8 +4,8 @@ Specifies style information applied to text.
 ## Enum
 Name | Type | Value | Description
 ------------ | ------------- | ------------- | -------------
-**BOLD** | **string** | 'Bold' | Bold text
 **BOLD_ITALIC** | **string** | 'BoldItalic' | Bold Italic text
+**BOLD** | **string** | 'Bold' | Bold text
 **ITALIC** | **string** | 'Italic' | Italic text
 **REGULAR** | **string** | 'Regular' | Regular text
 
