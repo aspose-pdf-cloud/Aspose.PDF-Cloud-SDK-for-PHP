@@ -4647,6 +4647,17 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $this->assertNotNull($response);
     }
 
+    public function testGetImageExtractAsSvg()
+    {
+        $name = "Alfa.pdf";
+        $this->uploadFile($name);
+
+        $pageNumber = 1;
+
+        $response = $this->pdfApi->getImagesExtractSvg($name, $pageNumber, $storage = null, $folder = $this->tempFolder);
+        $this->assertGreaterThan(0, count($response->getList()));
+    }
+
     // Links Tests
 
     public function testGetPageLinkAnnotation()

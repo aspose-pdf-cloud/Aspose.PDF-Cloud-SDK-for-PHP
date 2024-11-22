@@ -41,6 +41,7 @@ class DocRecognitionMode
      */
     const TEXTBOX = 'Textbox';
     const FLOW = 'Flow';
+    const ENHANCED_FLOW = 'EnhancedFlow';
     
     /**
      * Gets allowable values of the enum
@@ -51,6 +52,7 @@ class DocRecognitionMode
         return [
             self::TEXTBOX,
             self::FLOW,
+            self::ENHANCED_FLOW,
         ];
     }
 }

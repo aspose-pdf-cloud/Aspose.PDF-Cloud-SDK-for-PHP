@@ -95,6 +95,7 @@ Method | HTTP request | Description
 *PdfApi* | [**getImageExtractAsPng**](PdfApi.md#getImageExtractAsPng) | **GET** /pdf/\{name}/images/\{imageId}/extract/png | Extract document image in PNG format
 *PdfApi* | [**getImageExtractAsTiff**](PdfApi.md#getImageExtractAsTiff) | **GET** /pdf/\{name}/images/\{imageId}/extract/tiff | Extract document image in TIFF format
 *PdfApi* | [**getImages**](PdfApi.md#getImages) | **GET** /pdf/\{name}/pages/\{pageNumber}/images | Read document images.
+*PdfApi* | [**getImagesExtractSvg**](PdfApi.md#getImagesExtractSvg) | **GET** /pdf/\{name}/pages/\{pageNumber}/images/extract/svg | Extract SVG images from document page.
 *PdfApi* | [**getImportFieldsFromFdfInStorage**](PdfApi.md#getImportFieldsFromFdfInStorage) | **GET** /pdf/\{name}/import/fdf | Update fields from FDF file in storage.
 *PdfApi* | [**getImportFieldsFromXfdfInStorage**](PdfApi.md#getImportFieldsFromXfdfInStorage) | **GET** /pdf/\{name}/import/xfdf | Update fields from XFDF file in storage.
 *PdfApi* | [**getImportFieldsFromXmlInStorage**](PdfApi.md#getImportFieldsFromXmlInStorage) | **GET** /pdf/\{name}/import/xml | Import from XML file (located on storage) to PDF format and return resulting file in response. 
@@ -2436,6 +2437,30 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**\Aspose\PDF\Model\ImagesResponse**](ImagesResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getImagesExtractSvg"></a>
+## **getImagesExtractSvg**
+> \Aspose\PDF\Model\SvgImages getImagesExtractSvg($name, $page_number, $storage, $folder, $pass_base64)
+
+Extract SVG images from document page.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$page_number** | **int** | The page number. | 
+**$storage** | **string** | The document storage. | [optional]
+**$folder** | **string** | The document folder. | [optional]
+**$pass_base64** | **string** | The password (Base64). | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\SvgImages**](SvgImages.md)
 
 ### HTTP request headers
 

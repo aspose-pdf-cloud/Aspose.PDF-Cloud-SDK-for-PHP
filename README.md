@@ -29,14 +29,9 @@ XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, Text
 ## Read PDF Formats
 MHT, PCL, PS, XSLFO, MD
 
-## Enhancements in Version 24.10
-- Develop a method to add XMP metadata.
-- Develop a method to obtain XMP metadata in the XML form.
-- Develop a method to obtain XMP metadata in the JSON form.
+## Enhancements in Version 24.11
+- Add DocRecognitionMode EnhancedFlow mode.
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
-
-## Bugs fixed in Version 24.10
-- PDF XFA form to Acro from conversion API results corrupt PDF.
 
 ## Requirements
 PHP 7.4 and later.
