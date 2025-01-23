@@ -1,5 +1,5 @@
 {
     "require": {
-        "aspose/pdf-sdk-php": "^24.12"
+        "aspose/pdf-sdk-php": "^25.1"
     }
 }
