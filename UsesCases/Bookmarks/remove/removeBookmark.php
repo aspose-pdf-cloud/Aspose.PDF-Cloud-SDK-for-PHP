@@ -6,9 +6,6 @@ require __DIR__.'\..\..\vendor\autoload.php';
 
 use Aspose\PDF\Api\PdfApi;
 use Aspose\PDF\Configuration;
-use Aspose\PDF\Model\Bookmark;
-use Aspose\PDF\Model\Color;
-use Aspose\PDF\Model\Link;
 
 $credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
 
