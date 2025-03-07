@@ -9,6 +9,7 @@ use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\Bookmark;
 use Aspose\PDF\Model\Color;
 use Aspose\PDF\Model\Link;
+use Aspose\PDF\Model\LinkActionType;
 
 $credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
 
@@ -71,7 +72,7 @@ class PdfBookmarks {
             'bold' => false,
             'links' => [$bookmarkLink],
             'color' => $bookmarkColor,
-            'action' => 'GoTo',
+            'action' => LinkActionType::GO_TO_ACTION,
             'level' => 1,
             'pageDisplayLeft' => 83,
             'pageDisplayTop' => 751,
