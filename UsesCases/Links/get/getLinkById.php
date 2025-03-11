@@ -42,7 +42,7 @@ class PdfLinks {
     public function get_link_by_id () {
         $result_link = $this->pdfApi->getPageLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER'], $this->configParams['LINK_FIND_ID']);
 
-        if ($result_link->code == 200) {
+        if ($result_link->getCode() == 200) {
             $this->show_links([ $result_link->link ], 'found');
         }
         else
