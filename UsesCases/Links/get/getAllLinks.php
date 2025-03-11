@@ -41,7 +41,7 @@ class PdfLinks {
     public function get_all_links () {
         $result_links = $this->pdfApi->getPageLinkAnnotations($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER']);
 
-        if ($result_links->code == 200) {
+        if ($result_links->getCode() == 200) {
             $this->show_links($result_links->list, 'all');
         }
         else
