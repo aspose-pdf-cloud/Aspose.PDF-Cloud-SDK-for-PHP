@@ -50,7 +50,7 @@ class PdfLinks {
     public function get_link_by_id() {
         $result_link = $this->pdfApi->getPageLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER'], $this->configParams['LINK_FIND_ID']);
 
-        if ($result_link->code == 200) {
+        if ($result_link->getCode() == 200) {
             $this->show_links([ $result_link->link ], 'found');
             return$result_link->link;
         }
@@ -69,7 +69,7 @@ class PdfLinks {
             
             $update_response = $this->pdfApi->putLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['LINK_REMOVE_ID'], $link);
 
-            if ($update_response->code == 200) {
+            if ($update_response->getCode() == 200) {
                 $this->show_links( [ $update_response->link ], "drop");
                 return $update_response->link;
             }
