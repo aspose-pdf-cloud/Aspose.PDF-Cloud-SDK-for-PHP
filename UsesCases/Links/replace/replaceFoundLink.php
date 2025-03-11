@@ -52,7 +52,7 @@ class PdfLinks {
 
         if ($result_link->getCode() == 200) {
             $this->show_links([ $result_link->link ], 'found');
-            return$result_link->link;
+            return $result_link->link;
         }
         else{
             echo "Unexpected error : can't get link!!!";
