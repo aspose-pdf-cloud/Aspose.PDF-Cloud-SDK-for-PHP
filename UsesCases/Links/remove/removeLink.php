@@ -39,7 +39,7 @@ class PdfLinks {
     public function remove_link () {
         $result_delete = $this->pdfApi->deleteLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['LINK_REMOVE_ID']);
 
-        if ($result_delete->code == 200) {
+        if ($result_delete->getCode() == 200) {
             echo "Link '" . $this->configParams['LINK_REMOVE_ID'] . "' was deleted!";
         }
         else
