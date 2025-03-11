@@ -68,7 +68,7 @@ class PdfLinks {
 
         $addResponse = $this->pdfApi->postPageLinkAnnotations($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER'], [$newLink]);
 
-        if ($addResponse->code == 200) {
+        if ($addResponse->getCode() == 200) {
             echo "Append link successful!\n";
             return true;
         }
