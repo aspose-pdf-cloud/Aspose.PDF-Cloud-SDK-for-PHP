@@ -1,17 +1,13 @@
 <?php
 
-namespace Aspose\PDF\Api;
-
 require __DIR__.'\..\..\vendor\autoload.php';
 
-use Aspose\PDF\Api\PdfApi;
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\Bookmark;
 use Aspose\PDF\Model\Color;
 use Aspose\PDF\Model\Link;
 use Aspose\PDF\Model\LinkActionType;
-
-$credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
+use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
     'LOCAL_FOLDER' => 'C:\\Samples\\',
@@ -22,20 +18,23 @@ $configParams = [
     'NEW_BOOKMARK_PAGE_NUMBER' => 2,
 ];
 
-// API Initialization...
-$configAuth = new Configuration();
-$configAuth->setAppKey($credentials['key']);
-$configAuth->setAppSid($credentials['id']);
-
-$pdfApi = new PdfApi(null, $configAuth, null);
-
 class PdfBookmarks {
     private $pdfApi;
     private $configParams;
 
-    public function __construct($pdfApi, $configParams) {
-        $this->pdfApi = $pdfApi;
-        $this->configParams = $configParams;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
     public function uploadDocument() {
@@ -63,14 +62,14 @@ class PdfBookmarks {
     }
 
     public function appendBookmarkLink() {
-        $bookmarkLink = new Link(['rel' => 'self']);
-        $bookmarkColor = new Color(['a' => 255, 'r' => 0, 'g' => 255, 'b' => 0]);
+        $bookmarkLink = new Link(array('rel' => 'self'));
+        $bookmarkColor = new Color(array('a' => 255, 'r' => 0, 'g' => 255, 'b' => 0));
 
-        $newBookmark = new Bookmark([
+        $newBookmark = new Bookmark(array(
             'title' => $this->configParams['NEW_BOOKMARK_TITLE'],
             'italic' => true,
             'bold' => false,
-            'links' => [$bookmarkLink],
+            'links' => array( $bookmarkLink ),
             'color' => $bookmarkColor,
             'action' => LinkActionType::GO_TO_ACTION,
             'level' => 1,
@@ -78,9 +77,9 @@ class PdfBookmarks {
             'pageDisplayTop' => 751,
             'pageDisplayZoom' => 2,
             'pageNumber' => $this->configParams['NEW_BOOKMARK_PAGE_NUMBER']
-        ]);
+        ));
 
-        $response = $this->pdfApi->postBookmark($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PARENT_BOOKMARK_FOR_APPEND'], [$newBookmark]);
+        $response = $this->pdfApi->postBookmark( $this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PARENT_BOOKMARK_FOR_APPEND'], array( $newBookmark ) );
 
         if ($response->getCode() === 200 && null !== $response->getBookmarks()->getList()) {
             $bookmarks = $response->getBookmarks()->getList();
@@ -94,10 +93,10 @@ class PdfBookmarks {
 }
 
 function main() {
-    global $pdfApi, $configParams;
+    global $configParams;
 
     try {
-        $pdfBookmarks = new PdfBookmarks($pdfApi, $configParams);
+        $pdfBookmarks = new PdfBookmarks($configParams);
         $pdfBookmarks->uploadDocument();
         $pdfBookmarks->appendBookmarkLink();
         $pdfBookmarks->downloadResult();

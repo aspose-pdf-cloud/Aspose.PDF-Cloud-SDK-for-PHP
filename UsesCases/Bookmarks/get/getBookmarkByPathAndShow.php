@@ -1,13 +1,9 @@
 <?php
 
-namespace Aspose\PDF;
-
 require __DIR__.'\..\..\vendor\autoload.php';
 
-use Aspose\PDF\Api\PdfApi;
-use Aspose\PDF\Configuration;
-
-$credentials = json_decode(file_get_contents(__DIR__.'../../../credentials.json'), true);
+use \Aspose\PDF\Configuration;
+use \Aspose\PDF\Api\PdfApi;
 
 $configParams = [
     'LOCAL_FOLDER' => 'C:\\Samples\\',
@@ -16,20 +12,23 @@ $configParams = [
     'BOOKMARK_PATH' => '/5',
 ];
 
-// API Initialization...
-$configAuth = new Configuration();
-$configAuth->setAppKey($credentials['key']);
-$configAuth->setAppSid($credentials['id']);
-
-$pdfApi = new PdfApi(null, $configAuth, null);
-
 class PdfBookmarks {
     private $pdfApi;
     private $configParams;
 
-    public function __construct($pdfApi, $configParams) {
-        $this->pdfApi = $pdfApi;
-        $this->configParams = $configParams;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
     public function uploadDocument() {
@@ -45,20 +44,19 @@ class PdfBookmarks {
     }
 
     public function getBookmarkByPath()  {
-        $resultBookmark = $this->pdfApi->getBookmark($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['BOOKMARK_PATH']);
+        $resultBookmark = $this->pdfApi->getBookmarks($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['BOOKMARK_PATH']);
         if ($resultBookmark->getCode() === 200) 
-        {
-            echo "Found bookmark title: {$resultBookmark->bookmark->title}";
-            return $resultBookmark->bookmark;
-        }
+            echo "Found bookmark title: {$resultBookmark->getBookmark()->getTitle()}";
+        else
+            echo "Unexpected error : Bookmark not found!";
     }
 }
 
 function main() {
-    global $pdfApi, $configParams;
+    global $configParams;
 
     try {
-        $pdfBookmarks = new PdfBookmarks($pdfApi, $configParams);
+        $pdfBookmarks = new PdfBookmarks($configParams);
         $pdfBookmarks->uploadDocument();
         $pdfBookmarks->getBookmarkByPath();
     } catch (\Exception $e) {
