@@ -2,6 +2,7 @@
 
 require __DIR__.'\..\..\vendor\autoload.php';
 
+use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
@@ -11,49 +12,54 @@ $configParams = [
     'PAGE_NUMBER' => 2,     // Your document page number...
 ];
 
-$credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
-$pdfApi = new PdfApi($credentials['id'], $credentials['key']);
-
 class PdfLinks {
-    private $configParams;
     private $pdfApi;
+    private $configParams;
 
-    public function __construct($configParams, $pdfApi) {
-        $this->configParams = $configParams;
-        $this->pdfApi = $pdfApi;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
-    public function upload_document() {
+    public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
         $pdfFileData = file_get_contents($pdfFilePath);
         $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
     }
-
-    public function show_links($links, $prefix) {
-        if (is_array($links) && count($links) > 0)
-        {
-            foreach ($links as $link) {
-                echo $prefix . " => '" . $link->id . "', '" . $link->action;
-            }
-        }
-    }
-        
-    public function get_all_links () {
+       
+    public function getAllPageLinks () {
         $result_links = $this->pdfApi->getPageLinkAnnotations($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER']);
 
         if ($result_links->getCode() == 200) {
-            $this->show_links($result_links->list, 'all');
+            echo "Links array:";
+            var_dump($result_links->getLinks());
         }
         else
            echo "Unexpected error : can't get links!!!";
     }
 }
 
-$pdfLinks = new PdfLinks($configParams, $pdfApi);
+function main() {
+    global $configParams;
 
-try {
-    $pdfLinks->upload_document();
-    $pdfLinks->get_all_links();
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    try {
+        $pdfLinks = new PdfLinks($configParams);
+        $pdfLinks->uploadDocument();
+        $pdfLinks->getAllPageLinks();
+        $pdfLinks->downloadResult();
+    } catch (\Exception $e) {
+        echo "Error: " . $e->getMessage() . "\n";
+    }
 }
+
+main();
