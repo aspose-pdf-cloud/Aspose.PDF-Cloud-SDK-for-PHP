@@ -63,7 +63,6 @@ class PdfHeaderFooter {
     public function addImageFooter () {
         $imageFooter = new ImageFooter(array(
             'background' => true,
-            'value' => 'TEST FOOTER VALUE',
             'horizontal_alignment' => \Aspose\PDF\Model\HorizontalAlignment::CENTER,
             'file_name' => $this->configParams['IMAGE_FOOTER_FILE'],
             'width' => 24,
