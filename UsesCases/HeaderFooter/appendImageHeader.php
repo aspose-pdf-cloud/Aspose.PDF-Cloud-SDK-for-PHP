@@ -1,0 +1,95 @@
+<?php
+
+require __DIR__.'\..\..\vendor\autoload.php';
+
+use Aspose\PDF\Configuration;
+use Aspose\PDF\Model\ImageHeader;
+use Aspose\PDF\Api\PdfApi;
+
+$configParams = [
+    'LOCAL_FOLDER' => 'C:\\Samples\\',
+    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
+    'IIMAGE_HEADER_FILE' => 'sample.png',
+];
+
+class PdfHeaderFooter {
+    private $pdfApi;
+    private $configParams;
+
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
+    }
+
+    public function uploadFile($fileName) {
+        $filePath = $this->configParams['LOCAL_FOLDER'] . $fileName;
+        $fileData = file_get_contents($filePath);
+
+        $response = $this->pdfApi->uploadFile($fileName, $fileData);
+        if ($response->getCode() === 200) {
+            echo "Uploaded file: {$filePath}\n";
+        } else {
+            echo 'Failed to upload file.';
+        }
+    }
+
+    public function uploadDocument() {
+        $this->uploadFile($this->configParams['PDF_DOCUMENT_NAME']);
+    }
+
+    public function downloadResult() {
+        $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
+        $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
+
+        if ($response->getCode() === 200) {
+            file_put_contents($filePath, $response->getContents());
+            echo "Downloaded: $filePath\n";
+        } else {
+            echo "Failed to download file.";
+        }
+    }
+
+    public function addImageHeader () {
+        $imageHeader = new ImageHeader(array(
+            'background' => true,
+            'horizontal_alignment' => \Aspose\PDF\Model\HorizontalAlignment::CENTER,
+            'file_name' => $this->configParams['IMAGE_HEADER_FILE'],
+            'width' => 24,
+            'height' => 24,
+        ));
+        $resultHeader = $this->pdfApi->postDocumentImageHeader($this->configParams['PDF_DOCUMENT_NAME'], $imageHeader);
+
+        if ($resultHeader->getCode() === 200) {
+            echo 'Successfully appended image header ' . $this->configParams['IMAGE_HEADER_FILE'];
+        }
+        else
+            throw new Error("Unexpected error : can't append image header!");
+    }
+}
+
+function main() {
+    global $configParams;
+
+    try {
+        $pdfHeaderHeader = new PdfHeaderFooter($configParams);
+        $pdfHeaderHeader->uploadDocument();
+        $pdfHeaderHeader->uploadFile($configParams['IMAGE_HEADER_FILE']);
+        $pdfHeaderHeader->addImageHeader();
+        $pdfHeaderHeader->downloadResult();
+    } catch (\Exception $e) {
+        echo "Error: " . $e->getMessage() . "\n";
+    }
+}
+
+main();
