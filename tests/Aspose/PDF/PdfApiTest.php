@@ -4649,7 +4649,7 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
 
     public function testGetImageExtractAsSvg()
     {
-        $name = "Alfa.pdf";
+        $name = "alfa.pdf";
         $this->uploadFile($name);
 
         $pageNumber = 1;

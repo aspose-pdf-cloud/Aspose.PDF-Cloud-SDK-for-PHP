@@ -2,6 +2,7 @@
 
 require __DIR__.'\..\..\vendor\autoload.php';
 
+use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
@@ -11,32 +12,39 @@ $configParams = [
     'LINK_REMOVE_ID' => 'GI5UO32UN5KVESKBMN2GS33OHMZTEMJMGUYDQLBTGYYCYNJSGE',   // Your link ID to remove...
 ];
 
-$credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
-$pdfApi = new PdfApi($credentials['id'], $credentials['key']);
-
 class PdfLinks {
-    private $configParams;
     private $pdfApi;
+    private $configParams;
 
-    public function __construct($configParams, $pdfApi) {
-        $this->configParams = $configParams;
-        $this->pdfApi = $pdfApi;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
-    public function upload_document() {
+    public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
         $pdfFileData = file_get_contents($pdfFilePath);
         $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
     }
 
-    public function download_result() {
+    public function downloadResult() {
         $changedPdfData = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
         file_put_contents($filePath, $changedPdfData);
         echo "Downloaded: " . $filePath . "\n";
     }
 
-    public function remove_link () {
+    public function removeLinkById() {
         $result_delete = $this->pdfApi->deleteLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['LINK_REMOVE_ID']);
 
         if ($result_delete->getCode() == 200) {
@@ -47,12 +55,17 @@ class PdfLinks {
     }
 }
 
-$pdfLinks = new PdfLinks($configParams, $pdfApi);
+function main() {
+    global $configParams;
 
-try {
-    $pdfLinks->upload_document();
-    $pdfLinks->remove_link();
-    $pdfLinks->download_result();
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    try {
+        $pdfLinks = new PdfLinks($configParams);
+        $pdfLinks->uploadDocument();
+        $pdfLinks->removeLinkById();
+        $pdfLinks->downloadResult();
+    } catch (\Exception $e) {
+        echo "Error: " . $e->getMessage() . "\n";
+    }
 }
+
+main();

@@ -2,13 +2,14 @@
 
 require __DIR__.'\..\..\vendor\autoload.php';
 
-use Aspose\PDF\Api\PdfApi;
+use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\Color;
 use Aspose\PDF\Model\Link;
 use Aspose\PDF\Model\Rectangle;
 use Aspose\PDF\Model\LinkAnnotation;
 use Aspose\PDF\Model\LinkHighlightingMode;
 use Aspose\PDF\Model\LinkActionType;
+use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
     'LOCAL_FOLDER' => 'C:\\Samples\\',
@@ -22,32 +23,39 @@ $configParams = [
     'LINK_POS_URY' => 498.588,
 ];
 
-$credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
-$pdfApi = new PdfApi($credentials['id'], $credentials['key']);
-
 class PdfLinks {
-    private $configParams;
     private $pdfApi;
+    private $configParams;
 
-    public function __construct($configParams, $pdfApi) {
-        $this->configParams = $configParams;
-        $this->pdfApi = $pdfApi;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
-    public function upload_document() {
+    public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
         $pdfFileData = file_get_contents($pdfFilePath);
         $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
     }
 
-    public function download_result() {
+    public function downloadResult() {
         $changedPdfData = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
         file_put_contents($filePath, $changedPdfData);
         echo "Downloaded: " . $filePath . "\n";
     }
 
-    public function append_link() {
+    public function appendLinkOnPage() {
         $linkColor = new Color(['a' => 255, 'r' => 0, 'g' => 255, 'b' => 0]);
 
         $linkRectangle = new Rectangle();
@@ -75,12 +83,17 @@ class PdfLinks {
     }
 }
 
-$pdfLinks = new PdfLinks($configParams, $pdfApi);
+function main() {
+    global $configParams;
 
-try {
-    $pdfLinks->upload_document();
-    $pdfLinks->append_link();
-    $pdfLinks->download_result();
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    try {
+        $pdfLinks = new PdfLinks($configParams);
+        $pdfLinks->uploadDocument();
+        $pdfLinks->appendLinkOnPage();
+        $pdfLinks->downloadResult();
+    } catch (\Exception $e) {
+        echo "Error: " . $e->getMessage() . "\n";
+    }
 }
+
+main();

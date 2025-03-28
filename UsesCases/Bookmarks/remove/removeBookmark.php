@@ -1,13 +1,9 @@
 <?php
 
-namespace Aspose\PDF\Api;
-
 require __DIR__.'\..\..\vendor\autoload.php';
 
-use Aspose\PDF\Api\PdfApi;
 use Aspose\PDF\Configuration;
-
-$credentials = json_decode(file_get_contents('./Credentials/credentials.json'), true);
+use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
     'LOCAL_FOLDER' => 'C:\\Samples\\',
@@ -16,20 +12,23 @@ $configParams = [
     'DROP_BOOKMARK_PATH' => '/1',
 ];
 
-// API Initialization...
-$configAuth = new Configuration();
-$configAuth->setAppKey($credentials['key']);
-$configAuth->setAppSid($credentials['id']);
-
-$pdfApi = new PdfApi(null, $configAuth, null);
-
 class PdfBookmarks {
     private $pdfApi;
     private $configParams;
 
-    public function __construct($pdfApi, $configParams) {
-        $this->pdfApi = $pdfApi;
-        $this->configParams = $configParams;
+    private function _create_rest_api() {
+        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+
+        $configAuth = new Configuration();
+        $configAuth->setAppKey($credentials['key']);
+        $configAuth->setAppSid($credentials['id']);
+
+        $this->pdfApi = new PdfApi(null, $configAuth);
+     }
+
+    public function __construct($config) {
+        $this->configParams = $config;
+        $this->_create_rest_api();
     }
 
     public function uploadDocument() {
@@ -44,7 +43,7 @@ class PdfBookmarks {
         }
     }
 
-    public function downloadResult() {
+    public function download_result() {
         $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
 
@@ -66,10 +65,10 @@ class PdfBookmarks {
 }
 
 function main() {
-    global $pdfApi, $configParams;
+    global $configParams;
 
     try {
-        $pdfBookmarks = new PdfBookmarks($pdfApi, $configParams);
+        $pdfBookmarks = new PdfBookmarks($configParams);
         $pdfBookmarks->uploadDocument();
         $pdfBookmarks->deleteBookmark();
         $pdfBookmarks->downloadResult();
