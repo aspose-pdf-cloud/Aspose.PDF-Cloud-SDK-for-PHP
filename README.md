@@ -31,6 +31,7 @@ MHT, PCL, PS, XSLFO, MD
 
 ## Enhancements in Version 25.2
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
+
 ## Requirements
 PHP 7.4 and later.
 
