@@ -1,0 +1,22 @@
+{
+	"name": "PHP",
+	"image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+	"postCreateCommand": "composer install",
+	"workspaceFolder": "/SDKs/PHP",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/SDKs/PHP,type=bind,consistency=cached",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"intelephense.files.maxSize": 10000000,
+				"phpunit.trace.server": "verbose"
+			},
+			"extensions": [
+				"renandelmonico.vscode-php-test-explorer"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localWorkspaceFolder}/../../Settings,target=/Settings,type=bind,consistency=cached"
+	]
+
+}
