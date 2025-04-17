@@ -209,11 +209,13 @@ Method | HTTP request | Description
 *PdfApi* | [**postDocumentImageFooter**](PdfApi.md#postDocumentImageFooter) | **POST** /pdf/\{name}/footer/image | Add document image footer.
 *PdfApi* | [**postDocumentImageHeader**](PdfApi.md#postDocumentImageHeader) | **POST** /pdf/\{name}/header/image | Add document image header.
 *PdfApi* | [**postDocumentImageStamps**](PdfApi.md#postDocumentImageStamps) | **POST** /pdf/\{name}/stamps/image | Add document pages image stamps.
+*PdfApi* | [**postDocumentImageStampsPageSpecified**](PdfApi.md#postDocumentImageStampsPageSpecified) | **POST** /pdf/\{name}/stamps/image/pagespecified | Add document image stamps to specified pages.
 *PdfApi* | [**postDocumentPageNumberStamps**](PdfApi.md#postDocumentPageNumberStamps) | **POST** /pdf/\{name}/stamps/pagenumber | Add document page number stamps.
 *PdfApi* | [**postDocumentTextFooter**](PdfApi.md#postDocumentTextFooter) | **POST** /pdf/\{name}/footer/text | Add document text footer.
 *PdfApi* | [**postDocumentTextHeader**](PdfApi.md#postDocumentTextHeader) | **POST** /pdf/\{name}/header/text | Add document text header.
 *PdfApi* | [**postDocumentTextReplace**](PdfApi.md#postDocumentTextReplace) | **POST** /pdf/\{name}/text/replace | Document's replace text method.
 *PdfApi* | [**postDocumentTextStamps**](PdfApi.md#postDocumentTextStamps) | **POST** /pdf/\{name}/stamps/text | Add document pages text stamps.
+*PdfApi* | [**postDocumentTextStampsPageSpecified**](PdfApi.md#postDocumentTextStampsPageSpecified) | **POST** /pdf/\{name}/stamps/text/pagespecified | Add document text stamps to specified pages.
 *PdfApi* | [**postEncryptDocumentInStorage**](PdfApi.md#postEncryptDocumentInStorage) | **POST** /pdf/\{name}/encrypt | Encrypt document in storage.
 *PdfApi* | [**postFlattenDocument**](PdfApi.md#postFlattenDocument) | **POST** /pdf/\{name}/flatten | Flatten the document.
 *PdfApi* | [**postHtmlToPdf**](PdfApi.md#postHtmlToPdf) | **POST** /pdf/create/html | Convert HTML file (zip archive in request content) to PDF format and return resulting file in response. 
@@ -5160,6 +5162,30 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="postDocumentImageStampsPageSpecified"></a>
+## **postDocumentImageStampsPageSpecified**
+> \Aspose\PDF\Model\AsposeResponse postDocumentImageStampsPageSpecified($name, $stamps, $storage, $folder, $password)
+
+Add document image stamps to specified pages.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$stamps** | [**\Aspose\PDF\Model\ImageStampPageSpecified[]**](ImageStampPageSpecified.md) | The array of stamps. | 
+**$storage** | **string** | The document storage. | [optional]
+**$folder** | **string** | The document folder. | [optional]
+**$password** | **string** | Base64 encoded password. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="postDocumentPageNumberStamps"></a>
 ## **postDocumentPageNumberStamps**
 > \Aspose\PDF\Model\AsposeResponse postDocumentPageNumberStamps($name, $stamp, $start_page_number, $end_page_number, $storage, $folder, $password)
@@ -5270,6 +5296,30 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$name** | **string** | The document name. | 
 **$stamps** | [**\Aspose\PDF\Model\TextStamp[]**](TextStamp.md) | The array of stamp. | 
+**$storage** | **string** | The document storage. | [optional]
+**$folder** | **string** | The document folder. | [optional]
+**$password** | **string** | Base64 encoded password. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="postDocumentTextStampsPageSpecified"></a>
+## **postDocumentTextStampsPageSpecified**
+> \Aspose\PDF\Model\AsposeResponse postDocumentTextStampsPageSpecified($name, $stamps, $storage, $folder, $password)
+
+Add document text stamps to specified pages.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$stamps** | [**\Aspose\PDF\Model\TextStampPageSpecified[]**](TextStampPageSpecified.md) | The array of stamps. | 
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
 **$password** | **string** | Base64 encoded password. | [optional]

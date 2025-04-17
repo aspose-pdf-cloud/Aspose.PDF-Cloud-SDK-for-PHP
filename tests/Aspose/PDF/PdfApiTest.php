@@ -350,6 +350,57 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $response = $this->pdfApi->postDocumentTextStamps($name, [$stamp], null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
+    
+    public function testPostDocumentTextStampsPageSpecified()
+    {
+        $name = 'PageNumberStamp.pdf';
+        $this->uploadFile($name);
+
+        $textState =  new Aspose\PDF\Model\TextState();
+        $textState->setFontSize(14);
+        $textState->setFont('Arial');
+
+        $stamp1 = new Aspose\PDF\Model\TextStampPageSpecified();
+        $stamp1->setPageNumber(2);
+        $stamp1->setBackground(true);
+        $stamp1->setLeftMargin(1);
+        $stamp1->setRightMargin(2);
+        $stamp1->setTopMargin(3);
+        $stamp1->setBottomMargin(4);
+        $stamp1->setHorizontalAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp1->setVerticalAlignment(Aspose\PDF\Model\VerticalAlignment::CENTER);
+        $stamp1->setOpacity(1);
+        $stamp1->setRotate(Aspose\PDF\Model\Rotation::NONE);
+        $stamp1->setRotateAngle(0);
+        $stamp1->setXIndent(0);
+        $stamp1->setYIndent(0);
+        $stamp1->setZoom(1);
+        $stamp1->setTextAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp1->setValue("Text Stamp 1");
+        $stamp1->setTextState($textState);
+
+        $stamp2 = new Aspose\PDF\Model\TextStampPageSpecified();
+        $stamp2->setPageNumber(4);
+        $stamp2->setBackground(true);
+        $stamp2->setLeftMargin(1);
+        $stamp2->setRightMargin(2);
+        $stamp2->setTopMargin(3);
+        $stamp2->setBottomMargin(4);
+        $stamp2->setHorizontalAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp2->setVerticalAlignment(Aspose\PDF\Model\VerticalAlignment::CENTER);
+        $stamp2->setOpacity(1);
+        $stamp2->setRotate(Aspose\PDF\Model\Rotation::NONE);
+        $stamp2->setRotateAngle(0);
+        $stamp2->setXIndent(0);
+        $stamp2->setYIndent(0);
+        $stamp2->setZoom(1);
+        $stamp2->setTextAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp2->setValue("Text Stamp 2");
+        $stamp2->setTextState($textState);
+
+        $response = $this->pdfApi->postDocumentTextStampsPageSpecified($name, [$stamp1, $stamp2], null, $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+    }
 
     public function testPostPageImageStamps()
     {
@@ -406,6 +457,52 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $stamp->setFileName($this->tempFolder . '/' . $image);
 
         $response = $this->pdfApi->postDocumentImageStamps($name, [$stamp], null, $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+    }
+
+    public function testPostDocumentImageStampsPageSpecified()
+    {
+        $name = 'PageNumberStamp.pdf';
+        $this->uploadFile($name);
+
+        $image = 'Koala.jpg';
+        $this->uploadFile($image);
+
+        $stamp1 = new Aspose\PDF\Model\ImageStampPageSpecified();
+        $stamp1->setPageNumber(2);
+        $stamp1->setBackground(true);
+        $stamp1->setLeftMargin(1);
+        $stamp1->setRightMargin(2);
+        $stamp1->setTopMargin(3);
+        $stamp1->setBottomMargin(4);
+        $stamp1->setHorizontalAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp1->setVerticalAlignment(Aspose\PDF\Model\VerticalAlignment::CENTER);
+        $stamp1->setOpacity(1);
+        $stamp1->setRotate(Aspose\PDF\Model\Rotation::NONE);
+        $stamp1->setRotateAngle(0);
+        $stamp1->setXIndent(0);
+        $stamp1->setYIndent(0);
+        $stamp1->setZoom(1);
+        $stamp1->setFileName($this->tempFolder . '/' . $image);
+
+        $stamp2 = new Aspose\PDF\Model\ImageStampPageSpecified();
+        $stamp2->setPageNumber(4);
+        $stamp2->setBackground(true);
+        $stamp2->setLeftMargin(1);
+        $stamp2->setRightMargin(2);
+        $stamp2->setTopMargin(3);
+        $stamp2->setBottomMargin(4);
+        $stamp2->setHorizontalAlignment(Aspose\PDF\Model\HorizontalAlignment::CENTER);
+        $stamp2->setVerticalAlignment(Aspose\PDF\Model\VerticalAlignment::CENTER);
+        $stamp2->setOpacity(1);
+        $stamp2->setRotate(Aspose\PDF\Model\Rotation::NONE);
+        $stamp2->setRotateAngle(0);
+        $stamp2->setXIndent(0);
+        $stamp2->setYIndent(0);
+        $stamp2->setZoom(1);
+        $stamp2->setFileName($this->tempFolder . '/' . $image);
+
+        $response = $this->pdfApi->postDocumentImageStampsPageSpecified($name, [$stamp1, $stamp2], null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
 
