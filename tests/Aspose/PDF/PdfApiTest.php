@@ -3402,7 +3402,7 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
 
         $src_path = $this->tempFolder . '/' . $name;
 
-        $response = $this->pdfApi->getMhtInStorageToPdf($src_path);
+        $response = $this->pdfApi->getMhtInStorageToPdf($src_path, null, null, null, null, null, null);
         $this->assertGreaterThan(0, $response->getSize());
     }
 
@@ -3414,7 +3414,7 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $src_path = $this->tempFolder . '/' . $name;
         $resultName = "fromMht.pdf";
 
-        $response = $this->pdfApi->putMhtInStorageToPdf($resultName, $src_path, $this->tempFolder);
+        $response = $this->pdfApi->putMhtInStorageToPdf($resultName, $src_path, null, null, null, null, null, null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
 
@@ -6168,5 +6168,17 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
 
         $response = $this->pdfApi->getXmpMetadataJson($name, $this->tempFolder);
         $this->assertEquals(9, count($response->getProperties()));
+    }
+
+    public function testPostComparePdf()
+    {
+        $name1 = '4pages.pdf';
+        $this->uploadFile($name1);
+        $name2 = '4pagesPdfA.pdf';
+        $this->uploadFile($name2);
+        $output = 'output.pdf';
+
+        $response = $this->pdfApi->postComparePdf($this->tempFolder + "." + $name1, $this->tempFolder + "." + $name2, $output);
+        $this->assertEquals(200, $response->getCode());
     }
 }

@@ -2662,12 +2662,12 @@ Convert MHT file (located on storage) to PDF format and return resulting file in
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.mht) | 
-**$height** | **double** | Page height | 
-**$width** | **double** | Page width | 
-**$margin_left** | **double** | Page margin left | 
-**$margin_bottom** | **double** | Page margin bottom | 
-**$margin_right** | **double** | Page margin right | 
-**$margin_top** | **double** | Page margin top | 
+**$height** | **double** | Page height | [optional]
+**$width** | **double** | Page width | [optional]
+**$margin_left** | **double** | Page margin left | [optional]
+**$margin_bottom** | **double** | Page margin bottom | [optional]
+**$margin_right** | **double** | Page margin right | [optional]
+**$margin_top** | **double** | Page margin top | [optional]
 **$storage** | **string** | The document storage. | [optional]
 
 ### Return type
@@ -7555,12 +7555,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$name** | **string** | The document name. | 
 **$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.mht) | 
-**$height** | **double** | Page height | 
-**$width** | **double** | Page width | 
-**$margin_left** | **double** | Page margin left | 
-**$margin_bottom** | **double** | Page margin bottom | 
-**$margin_right** | **double** | Page margin right | 
-**$margin_top** | **double** | Page margin top | 
+**$height** | **double** | Page height | [optional]
+**$width** | **double** | Page width | [optional]
+**$margin_left** | **double** | Page margin left | [optional]
+**$margin_bottom** | **double** | Page margin bottom | [optional]
+**$margin_right** | **double** | Page margin right | [optional]
+**$margin_top** | **double** | Page margin top | [optional]
 **$dst_folder** | **string** | The destination document folder. | [optional]
 **$storage** | **string** | The document storage. | [optional]
 
