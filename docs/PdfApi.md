@@ -203,6 +203,7 @@ Method | HTTP request | Description
 *PdfApi* | [**postChangePasswordDocumentInStorage**](PdfApi.md#postChangePasswordDocumentInStorage) | **POST** /pdf/\{name}/changepassword | Change document password in storage.
 *PdfApi* | [**postCheckBoxFields**](PdfApi.md#postCheckBoxFields) | **POST** /pdf/\{name}/fields/checkbox | Add document checkbox fields.
 *PdfApi* | [**postComboBoxFields**](PdfApi.md#postComboBoxFields) | **POST** /pdf/\{name}/fields/combobox | Add document combobox fields.
+*PdfApi* | [**postComparePdf**](PdfApi.md#postComparePdf) | **POST** /pdf/compare | Compare two PDF documents.
 *PdfApi* | [**postCreateDocument**](PdfApi.md#postCreateDocument) | **POST** /pdf/\{name} | Create empty document.
 *PdfApi* | [**postCreateField**](PdfApi.md#postCreateField) | **POST** /pdf/\{name}/fields | Create field.
 *PdfApi* | [**postDecryptDocumentInStorage**](PdfApi.md#postDecryptDocumentInStorage) | **POST** /pdf/\{name}/decrypt | Decrypt document in storage.
@@ -2653,7 +2654,7 @@ Name | Type | Description  | Notes
 
 <a name="getMhtInStorageToPdf"></a>
 ## **getMhtInStorageToPdf**
-> \SplFileObject getMhtInStorageToPdf($src_path, $storage)
+> \SplFileObject getMhtInStorageToPdf($src_path, $height, $width, $margin_left, $margin_bottom, $margin_right, $margin_top, $storage)
 
 Convert MHT file (located on storage) to PDF format and return resulting file in response. 
 
@@ -2661,6 +2662,12 @@ Convert MHT file (located on storage) to PDF format and return resulting file in
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.mht) | 
+**$height** | **double** | Page height | [optional]
+**$width** | **double** | Page width | [optional]
+**$margin_left** | **double** | Page margin left | [optional]
+**$margin_bottom** | **double** | Page margin bottom | [optional]
+**$margin_right** | **double** | Page margin right | [optional]
+**$margin_top** | **double** | Page margin top | [optional]
 **$storage** | **string** | The document storage. | [optional]
 
 ### Return type
@@ -5008,6 +5015,29 @@ Name | Type | Description  | Notes
 **$fields** | [**\Aspose\PDF\Model\ComboBoxField[]**](ComboBoxField.md) | The array of field. | 
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="postComparePdf"></a>
+## **postComparePdf**
+> \Aspose\PDF\Model\AsposeResponse postComparePdf($path1, $path2, $out_path, $storage)
+
+Compare two PDF documents.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$path1** | **string** | Path to first PDF document. | 
+**$path2** | **string** | Path to second PDF document. | 
+**$out_path** | **string** | Full filename of the resulting document. | 
+**$storage** | **string** | The documents storage. | [optional]
 
 ### Return type
 
@@ -7516,7 +7546,7 @@ Name | Type | Description  | Notes
 
 <a name="putMhtInStorageToPdf"></a>
 ## **putMhtInStorageToPdf**
-> \Aspose\PDF\Model\AsposeResponse putMhtInStorageToPdf($name, $src_path, $dst_folder, $storage)
+> \Aspose\PDF\Model\AsposeResponse putMhtInStorageToPdf($name, $src_path, $height, $width, $margin_left, $margin_bottom, $margin_right, $margin_top, $dst_folder, $storage)
 
 Convert MHT file (located on storage) to PDF format and upload resulting file to storage. 
 
@@ -7525,6 +7555,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$name** | **string** | The document name. | 
 **$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.mht) | 
+**$height** | **double** | Page height | [optional]
+**$width** | **double** | Page width | [optional]
+**$margin_left** | **double** | Page margin left | [optional]
+**$margin_bottom** | **double** | Page margin bottom | [optional]
+**$margin_right** | **double** | Page margin right | [optional]
+**$margin_top** | **double** | Page margin top | [optional]
 **$dst_folder** | **string** | The destination document folder. | [optional]
 **$storage** | **string** | The document storage. | [optional]
 
