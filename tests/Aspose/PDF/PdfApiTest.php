@@ -4550,7 +4550,13 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $this->uploadFile($imageFileName);
         $folder = $this->tempFolder;
         $imageFile = $folder . '/' . $imageFileName;
-        $imageIds = ['GE5TENJVGQZTWMJYGQWDINRUFQ2DCMRMGY4TC', 'GE5TIMJSGY3TWMJXG4WDIMBZFQ2DCOJMGQ3DK'];
+        $responseImages1 = $this->pdfApi->getImages($name, 1, $storage = null, $folder);
+        $this->assertEquals(200, $responseImages1->getCode());
+        $imageId1 = $responseImages1->getImages()->getList()[0]->getId();
+        $responseImages2 = $this->pdfApi->getImages($name, 16, $storage = null, $folder);
+        $this->assertEquals(200, $responseImages2->getCode());
+        $imageId2 = $responseImages2->getImages()->getList()[0]->getId();
+        $imageIds = [$imageId1, $imageId2];
         $response = $this->pdfApi->putReplaceMultipleImage($name, $imageIds, $imageFile, $storage = null, $folder);
         $this->assertEquals(200, $response->getCode());
     }
@@ -6178,7 +6184,16 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $this->uploadFile($name2);
         $output = 'output.pdf';
 
-        $response = $this->pdfApi->postComparePdf($this->tempFolder + "." + $name1, $this->tempFolder + "." + $name2, $output);
+        $response = $this->pdfApi->postComparePdf($this->tempFolder . "/" . $name1, $this->tempFolder .  "/" . $name2, $output);
+        $this->assertEquals(200, $response->getCode());
+    }
+
+    public function testPostDocumentPagesRotate()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+        $folder = $this->tempFolder;
+        $response = $this->pdfApi->postDocumentPagesRotate($name, \Aspose\PDF\Model\Rotation::ON90, '2-3', null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
 }
