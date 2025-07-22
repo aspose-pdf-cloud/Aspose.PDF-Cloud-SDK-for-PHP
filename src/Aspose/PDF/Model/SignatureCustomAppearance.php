@@ -55,6 +55,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'font_family_name' => 'string',
         'font_size' => 'double',
+        'rotation' => '\Aspose\PDF\Model\Rotation',
         'show_contact_info' => 'bool',
         'show_reason' => 'bool',
         'show_location' => 'bool',
@@ -64,7 +65,11 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         'digital_signed_label' => 'string',
         'date_signed_at_label' => 'string',
         'date_time_local_format' => 'string',
-        'date_time_format' => 'string'
+        'date_time_format' => 'string',
+        'background_color' => '\Aspose\PDF\Model\Color',
+        'foreground_color' => '\Aspose\PDF\Model\Color',
+        'use_digital_subject_format' => 'bool',
+        'digital_subject_format' => '\Aspose\PDF\Model\SignatureSubjectNameElements[]'
     ];
 
     /**
@@ -75,6 +80,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'font_family_name' => null,
         'font_size' => 'double',
+        'rotation' => null,
         'show_contact_info' => null,
         'show_reason' => null,
         'show_location' => null,
@@ -84,7 +90,11 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         'digital_signed_label' => null,
         'date_signed_at_label' => null,
         'date_time_local_format' => null,
-        'date_time_format' => null
+        'date_time_format' => null,
+        'background_color' => null,
+        'foreground_color' => null,
+        'use_digital_subject_format' => null,
+        'digital_subject_format' => null
     ];
 
     /**
@@ -116,6 +126,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'font_family_name' => 'FontFamilyName',
         'font_size' => 'FontSize',
+        'rotation' => 'Rotation',
         'show_contact_info' => 'ShowContactInfo',
         'show_reason' => 'ShowReason',
         'show_location' => 'ShowLocation',
@@ -125,7 +136,11 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         'digital_signed_label' => 'DigitalSignedLabel',
         'date_signed_at_label' => 'DateSignedAtLabel',
         'date_time_local_format' => 'DateTimeLocalFormat',
-        'date_time_format' => 'DateTimeFormat'
+        'date_time_format' => 'DateTimeFormat',
+        'background_color' => 'BackgroundColor',
+        'foreground_color' => 'ForegroundColor',
+        'use_digital_subject_format' => 'UseDigitalSubjectFormat',
+        'digital_subject_format' => 'DigitalSubjectFormat'
     ];
 
     /**
@@ -136,6 +151,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     protected static $setters = [
         'font_family_name' => 'setFontFamilyName',
         'font_size' => 'setFontSize',
+        'rotation' => 'setRotation',
         'show_contact_info' => 'setShowContactInfo',
         'show_reason' => 'setShowReason',
         'show_location' => 'setShowLocation',
@@ -145,7 +161,11 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         'digital_signed_label' => 'setDigitalSignedLabel',
         'date_signed_at_label' => 'setDateSignedAtLabel',
         'date_time_local_format' => 'setDateTimeLocalFormat',
-        'date_time_format' => 'setDateTimeFormat'
+        'date_time_format' => 'setDateTimeFormat',
+        'background_color' => 'setBackgroundColor',
+        'foreground_color' => 'setForegroundColor',
+        'use_digital_subject_format' => 'setUseDigitalSubjectFormat',
+        'digital_subject_format' => 'setDigitalSubjectFormat'
     ];
 
     /**
@@ -156,6 +176,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     protected static $getters = [
         'font_family_name' => 'getFontFamilyName',
         'font_size' => 'getFontSize',
+        'rotation' => 'getRotation',
         'show_contact_info' => 'getShowContactInfo',
         'show_reason' => 'getShowReason',
         'show_location' => 'getShowLocation',
@@ -165,7 +186,11 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         'digital_signed_label' => 'getDigitalSignedLabel',
         'date_signed_at_label' => 'getDateSignedAtLabel',
         'date_time_local_format' => 'getDateTimeLocalFormat',
-        'date_time_format' => 'getDateTimeFormat'
+        'date_time_format' => 'getDateTimeFormat',
+        'background_color' => 'getBackgroundColor',
+        'foreground_color' => 'getForegroundColor',
+        'use_digital_subject_format' => 'getUseDigitalSubjectFormat',
+        'digital_subject_format' => 'getDigitalSubjectFormat'
     ];
 
     /**
@@ -230,6 +255,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     {
         $this->container['font_family_name'] = isset($data['font_family_name']) ? $data['font_family_name'] : null;
         $this->container['font_size'] = isset($data['font_size']) ? $data['font_size'] : null;
+        $this->container['rotation'] = isset($data['rotation']) ? $data['rotation'] : null;
         $this->container['show_contact_info'] = isset($data['show_contact_info']) ? $data['show_contact_info'] : null;
         $this->container['show_reason'] = isset($data['show_reason']) ? $data['show_reason'] : null;
         $this->container['show_location'] = isset($data['show_location']) ? $data['show_location'] : null;
@@ -240,6 +266,10 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         $this->container['date_signed_at_label'] = isset($data['date_signed_at_label']) ? $data['date_signed_at_label'] : null;
         $this->container['date_time_local_format'] = isset($data['date_time_local_format']) ? $data['date_time_local_format'] : null;
         $this->container['date_time_format'] = isset($data['date_time_format']) ? $data['date_time_format'] : null;
+        $this->container['background_color'] = isset($data['background_color']) ? $data['background_color'] : null;
+        $this->container['foreground_color'] = isset($data['foreground_color']) ? $data['foreground_color'] : null;
+        $this->container['use_digital_subject_format'] = isset($data['use_digital_subject_format']) ? $data['use_digital_subject_format'] : null;
+        $this->container['digital_subject_format'] = isset($data['digital_subject_format']) ? $data['digital_subject_format'] : null;
     }
 
     /**
@@ -251,8 +281,8 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if ($this->container['font_size'] === null) {
-            $invalidProperties[] = "'font_size' can't be null";
+        if ($this->container['rotation'] === null) {
+            $invalidProperties[] = "'rotation' can't be null";
         }
         if ($this->container['show_contact_info'] === null) {
             $invalidProperties[] = "'show_contact_info' can't be null";
@@ -262,6 +292,9 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
         }
         if ($this->container['show_location'] === null) {
             $invalidProperties[] = "'show_location' can't be null";
+        }
+        if ($this->container['use_digital_subject_format'] === null) {
+            $invalidProperties[] = "'use_digital_subject_format' can't be null";
         }
         return $invalidProperties;
     }
@@ -275,7 +308,7 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     public function valid()
     {
 
-        if ($this->container['font_size'] === null) {
+        if ($this->container['rotation'] === null) {
             return false;
         }
         if ($this->container['show_contact_info'] === null) {
@@ -285,6 +318,9 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
             return false;
         }
         if ($this->container['show_location'] === null) {
+            return false;
+        }
+        if ($this->container['use_digital_subject_format'] === null) {
             return false;
         }
         return true;
@@ -335,6 +371,30 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     public function setFontSize($font_size)
     {
         $this->container['font_size'] = $font_size;
+
+        return $this;
+    }
+
+    /**
+     * Gets rotation
+     *
+     * @return \Aspose\PDF\Model\Rotation
+     */
+    public function getRotation()
+    {
+        return $this->container['rotation'];
+    }
+
+    /**
+     * Sets rotation
+     *
+     * @param \Aspose\PDF\Model\Rotation $rotation Gets or sets signature rotation.
+     *
+     * @return $this
+     */
+    public function setRotation($rotation)
+    {
+        $this->container['rotation'] = $rotation;
 
         return $this;
     }
@@ -575,6 +635,102 @@ class SignatureCustomAppearance implements ModelInterface, ArrayAccess
     public function setDateTimeFormat($date_time_format)
     {
         $this->container['date_time_format'] = $date_time_format;
+
+        return $this;
+    }
+
+    /**
+     * Gets background_color
+     *
+     * @return \Aspose\PDF\Model\Color
+     */
+    public function getBackgroundColor()
+    {
+        return $this->container['background_color'];
+    }
+
+    /**
+     * Sets background_color
+     *
+     * @param \Aspose\PDF\Model\Color $background_color Gets/sets background color.
+     *
+     * @return $this
+     */
+    public function setBackgroundColor($background_color)
+    {
+        $this->container['background_color'] = $background_color;
+
+        return $this;
+    }
+
+    /**
+     * Gets foreground_color
+     *
+     * @return \Aspose\PDF\Model\Color
+     */
+    public function getForegroundColor()
+    {
+        return $this->container['foreground_color'];
+    }
+
+    /**
+     * Sets foreground_color
+     *
+     * @param \Aspose\PDF\Model\Color $foreground_color Gets/sets foreground color.
+     *
+     * @return $this
+     */
+    public function setForegroundColor($foreground_color)
+    {
+        $this->container['foreground_color'] = $foreground_color;
+
+        return $this;
+    }
+
+    /**
+     * Gets use_digital_subject_format
+     *
+     * @return bool
+     */
+    public function getUseDigitalSubjectFormat()
+    {
+        return $this->container['use_digital_subject_format'];
+    }
+
+    /**
+     * Sets use_digital_subject_format
+     *
+     * @param bool $use_digital_subject_format Gets/sets subject format usage.
+     *
+     * @return $this
+     */
+    public function setUseDigitalSubjectFormat($use_digital_subject_format)
+    {
+        $this->container['use_digital_subject_format'] = $use_digital_subject_format;
+
+        return $this;
+    }
+
+    /**
+     * Gets digital_subject_format
+     *
+     * @return \Aspose\PDF\Model\SignatureSubjectNameElements[]
+     */
+    public function getDigitalSubjectFormat()
+    {
+        return $this->container['digital_subject_format'];
+    }
+
+    /**
+     * Sets digital_subject_format
+     *
+     * @param \Aspose\PDF\Model\SignatureSubjectNameElements[] $digital_subject_format Gets/sets subject format.
+     *
+     * @return $this
+     */
+    public function setDigitalSubjectFormat($digital_subject_format)
+    {
+        $this->container['digital_subject_format'] = $digital_subject_format;
 
         return $this;
     }
