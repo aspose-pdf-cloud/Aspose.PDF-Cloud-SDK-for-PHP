@@ -6196,4 +6196,13 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $response = $this->pdfApi->postDocumentPagesRotate($name, \Aspose\PDF\Model\Rotation::ON90, '2-3', null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
+
+    public function testPostDocumentPagesResize()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+        $folder = $this->tempFolder;
+        $response = $this->pdfApi->postDocumentPagesResize($name, 100, 200, '2-3', null, $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+    }
 }
