@@ -212,6 +212,7 @@ Method | HTTP request | Description
 *PdfApi* | [**postDocumentImageStamps**](PdfApi.md#postDocumentImageStamps) | **POST** /pdf/\{name}/stamps/image | Add document pages image stamps.
 *PdfApi* | [**postDocumentImageStampsPageSpecified**](PdfApi.md#postDocumentImageStampsPageSpecified) | **POST** /pdf/\{name}/stamps/image/pagespecified | Add document image stamps to specified pages.
 *PdfApi* | [**postDocumentPageNumberStamps**](PdfApi.md#postDocumentPageNumberStamps) | **POST** /pdf/\{name}/stamps/pagenumber | Add document page number stamps.
+*PdfApi* | [**postDocumentPagesCrop**](PdfApi.md#postDocumentPagesCrop) | **POST** /pdf/\{name}/crop | Crop PDF document pages.
 *PdfApi* | [**postDocumentPagesResize**](PdfApi.md#postDocumentPagesResize) | **POST** /pdf/\{name}/resize | Rsize PDF document.
 *PdfApi* | [**postDocumentPagesRotate**](PdfApi.md#postDocumentPagesRotate) | **POST** /pdf/\{name}/rotate | Rotate PDF document.
 *PdfApi* | [**postDocumentTextFooter**](PdfApi.md#postDocumentTextFooter) | **POST** /pdf/\{name}/footer/text | Add document text footer.
@@ -5231,6 +5232,31 @@ Name | Type | Description  | Notes
 **$stamp** | [**\Aspose\PDF\Model\PageNumberStamp**](PageNumberStamp.md) | The stamp. | 
 **$start_page_number** | **int** | The start page number. | [optional]
 **$end_page_number** | **int** | The end page number. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+**$folder** | **string** | The document folder. | [optional]
+**$password** | **string** | Base64 encoded password. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="postDocumentPagesCrop"></a>
+## **postDocumentPagesCrop**
+> \Aspose\PDF\Model\AsposeResponse postDocumentPagesCrop($name, $pages, $rect, $storage, $folder, $password)
+
+Crop PDF document pages.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$pages** | **string** | Comma separated list of pages and page ranges. (Example: 1,3-5,8) | 
+**$rect** | [**\Aspose\PDF\Model\Rectangle**](Rectangle.md) | Rectangle of document area. | 
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
 **$password** | **string** | Base64 encoded password. | [optional]

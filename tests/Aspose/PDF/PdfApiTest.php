@@ -6205,4 +6205,13 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $response = $this->pdfApi->postDocumentPagesResize($name, 100, 200, '2-3', null, $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
+
+    public function testPostDocumentPagesCrop()
+    {
+        $name = '4pages.pdf';
+        $this->uploadFile($name);
+        $folder = $this->tempFolder;
+        $response = $this->pdfApi->postDocumentPagesCrop($name, '2-3', new Aspose\PDF\Model\Rectangle(['llx' => 0, 'lly' => 0, 'urx' => 800, 'ury' => 400]), null, $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+    }
 }
