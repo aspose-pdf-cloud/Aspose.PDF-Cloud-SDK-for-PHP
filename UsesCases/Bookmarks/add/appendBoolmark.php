@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\Bookmark;
@@ -10,8 +10,8 @@ use Aspose\PDF\Model\LinkActionType;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => 'PdfWithBookmarks.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
     'NEW_BOOKMARK_TITLE' => '• Increased performance',
     'PARENT_BOOKMARK_FOR_APPEND' => '',  // Specify an empty string when adding a bookmark to the root 
@@ -23,11 +23,11 @@ class PdfBookmarks {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -39,10 +39,9 @@ class PdfBookmarks {
 
     public function uploadDocument() {
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $fileData = file_get_contents($filePath);
 
-        $response = $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $fileData);
-        if ($response->getCode() === 200) {
+        $response = $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $filePath);
+        if (count($response->getUploaded()) === 1) {
             echo "Uploaded file: {$this->configParams['PDF_DOCUMENT_NAME']}\n";
         } else {
             echo "Failed to upload file.";
@@ -53,8 +52,10 @@ class PdfBookmarks {
         $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
 
-        if ($response->getCode() === 200) {
-            file_put_contents($filePath, $response->getContents());
+        if ($response != null) {
+            $response->rewind();
+            $content = $response->fread($response->getSize());
+            file_put_contents($filePath, $content);
             echo "Downloaded: $filePath\n";
         } else {
             echo "Failed to download file.";
@@ -71,16 +72,16 @@ class PdfBookmarks {
             'bold' => false,
             'links' => array( $bookmarkLink ),
             'color' => $bookmarkColor,
-            'action' => LinkActionType::GO_TO_ACTION,
+            'action' => "GoTo",
             'level' => 1,
-            'pageDisplayLeft' => 83,
-            'pageDisplayTop' => 751,
-            'pageDisplayZoom' => 2,
-            'pageNumber' => $this->configParams['NEW_BOOKMARK_PAGE_NUMBER']
+            'page_display' => 'XYZ',
+            'page_display_left' => 83,
+            'page_display_top' => 751,
+            'page_display_zoom' => 2,
+            'page_number' => $this->configParams['NEW_BOOKMARK_PAGE_NUMBER']
         ));
 
         $response = $this->pdfApi->postBookmark( $this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PARENT_BOOKMARK_FOR_APPEND'], array( $newBookmark ) );
-
         if ($response->getCode() === 200 && null !== $response->getBookmarks()->getList()) {
             $bookmarks = $response->getBookmarks()->getList();
             $addedBookmark = end($bookmarks);

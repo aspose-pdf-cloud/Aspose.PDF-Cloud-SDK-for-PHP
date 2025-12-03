@@ -36,19 +36,19 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
     {
         $this->tempFolder = 'TempPdfCloud';        
         $this->config = new Configuration();
-        $servercreds_json = file_get_contents('../../../../../Settings/servercreds.json');
+        $servercreds_json = file_get_contents('settings/credentials.json');
         $creds = json_decode($servercreds_json, true);
-        if (array_key_exists('SelfHost', $creds)) {
-            $this->config->setSelfHost($creds['SelfHost']);
+        if (array_key_exists('self_host', $creds)) {
+            $this->config->setSelfHost($creds['self_host']);
         }
-        if (array_key_exists('AppSID', $creds)) {
-            $this->config->setAppSid($creds['AppSID']);
+        if (array_key_exists('client_id', $creds)) {
+            $this->config->setClientId($creds['client_id']);
         }
-        if (array_key_exists('AppKey', $creds)) {
-            $this->config->setAppKey($creds['AppKey']);
+        if (array_key_exists('client_secret', $creds)) {
+            $this->config->setClientSecret($creds['client_secret']);
         }
-        if (array_key_exists('ProductUri', $creds)) {
-            $this->config->setHost($creds['ProductUri']);
+        if (array_key_exists('api_url', $creds)) {
+            $this->config->setHost($creds['api_url']);
         }
         $this->pdfApi = new PdfApi(null, $this->config);
     }

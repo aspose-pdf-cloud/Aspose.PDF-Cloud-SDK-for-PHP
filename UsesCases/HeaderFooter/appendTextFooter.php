@@ -1,13 +1,13 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\TextFooter;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
+    'LOCAL_FOLDER' => 'testData/',
     'PDF_DOCUMENT_NAME' => 'sample.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
     'FOOTER_VALUE' => 'New Footer Value',
@@ -18,11 +18,11 @@ class PdfHeaderFooter {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -34,10 +34,8 @@ class PdfHeaderFooter {
 
     public function uploadDocument() {
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $fileData = file_get_contents($filePath);
-
-        $response = $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $fileData);
-        if ($response->getCode() === 200) {
+        $response = $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $filePath);
+        if (count($response->getUploaded()) === 1) {
             echo "Uploaded file: {$filePath}\n";
         } else {
             echo 'Failed to upload file.';
@@ -47,13 +45,10 @@ class PdfHeaderFooter {
     public function downloadResult() {
         $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-
-        if ($response->getCode() === 200) {
-            file_put_contents($filePath, $response->getContents());
-            echo "Downloaded: $filePath\n";
-        } else {
-            echo "Failed to download file.";
-        }
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
+        echo "Downloaded: {$filePath}\n";
     }
 
     public function addTextFooter () {

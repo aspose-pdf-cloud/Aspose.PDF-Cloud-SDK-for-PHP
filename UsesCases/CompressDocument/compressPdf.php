@@ -1,14 +1,14 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-$credentials = json_decode(file_get_contents(__DIR__ . '/../../../Credentials/credentials.json'), true);
+$credentials = json_decode(file_get_contents('./settings/credentials.json'), true);
 
 $configParams = [
-    "LOCAL_FOLDER" => "C:\\Samples\\",
+    "LOCAL_FOLDER" => "testData",
     "PDF_DOCUMENT_NAME" => "sample.pdf",
     "TEMP_FOLDER" => "TempPdfCloud",
     "LOCAL_RESULT_DOCUMENT_NAME" => "output_sample.pdf",
@@ -20,11 +20,11 @@ class PdfCompress
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("../../../../Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
     }
@@ -37,21 +37,22 @@ class PdfCompress
     public function uploadDocument()
     {
         $filePath = $this->configParams["LOCAL_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["PDF_DOCUMENT_NAME"];
-        $fileData = file_get_contents($filePath);
 
         $storagePath = $this->configParams["TEMP_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["PDF_DOCUMENT_NAME"];
 
-        $this->pdfApi->uploadFile($storagePath, $fileData);
+        $this->pdfApi->uploadFile($storagePath, $filePath);
         echo "File: '{$this->configParams["PDF_DOCUMENT_NAME"]}' successfully uploaded." . PHP_EOL;
     }
 
     public function downloadResult()
     {
         $fileName = $this->configParams["TEMP_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["PDF_DOCUMENT_NAME"];
-        $downloaded = $this->pdfApi->downloadFile($fileName);
+        $response = $this->pdfApi->downloadFile($fileName);
 
         $filePath = $this->configParams["LOCAL_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["LOCAL_RESULT_DOCUMENT_NAME"];
-        file_put_contents($filePath, $downloaded);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: {$filePath}" . PHP_EOL;
     }
 
@@ -82,7 +83,7 @@ class PdfCompress
 }
 
 try {
-    $compressor = new PdfCompress($pdfApi, $configParams);
+    $compressor = new PdfCompress($configParams);
     $compressor->uploadDocument();
     $compressor->compressPdfDocument();
     $compressor->downloadResult();

@@ -1,10 +1,15 @@
 <?php
 
+use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-$credentials = json_decode(file_get_contents(__DIR__ . '/../../../Credentials/credentials.json'), true);
+$credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
-$pdfApi = new PdfApi($credentials['id'], $credentials['key']);
+$configAuth = new Configuration();
+$configAuth->setClientSecret($credentials['client_secret']);
+$configAuth->setClientId($credentials['client_id']);
+
+$pdfApi = new PdfApi(null, $configAuth);
 
 class PdfComparesHelper
 {
@@ -20,8 +25,7 @@ class PdfComparesHelper
         $localFilePath = rtrim($localFolder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $fileName;
         $remoteFilePath = rtrim($remoteFolder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $fileName;
 
-        $fileData = file_get_contents($localFilePath);
-        $this->pdfApi->uploadFile($remoteFilePath, $fileData);
+        $this->pdfApi->uploadFile($remoteFilePath, $localFilePath);
 
         echo "Uploaded: $fileName\n";
     }
@@ -32,7 +36,9 @@ class PdfComparesHelper
         $response = $this->pdfApi->downloadFile($remoteFilePath);
 
         $localFilePath = rtrim($localFolder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $fileName;
-        file_put_contents($localFilePath, $response['body']);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($localFilePath, $content);
 
         echo "Downloaded: $localFilePath\n";
     }

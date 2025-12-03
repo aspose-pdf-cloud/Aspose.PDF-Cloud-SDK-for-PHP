@@ -1,16 +1,16 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => 'PdfWithLinks.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
-    'PAGE_NUMBER' => 2,                                                     // Your document page number...
-    'LINK_FIND_ID' => 'GI5UO32UN5KVESKBMN2GS33OHMZTEMJMGUYDQLBTGYYCYNJSGE', // Your link ID...
+    'PAGE_NUMBER' => 1,                                                     // Your document page number...
+    'LINK_FIND_ID' => 'GE5UO32UN5AWG5DJN5XDWOBYFQ3TGMJMGEZTMLBXGQ3A', // Your link ID...
 ];
 
 class PdfLinks {
@@ -18,11 +18,11 @@ class PdfLinks {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -34,8 +34,7 @@ class PdfLinks {
 
     public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $pdfFileData = file_get_contents($pdfFilePath);
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFilePath);
     }
 
     public function getPageLinkById() {
@@ -43,7 +42,7 @@ class PdfLinks {
 
         if ($result_link->getCode() == 200) {
             echo "Found link:";
-            var_dump($result_link->getLlink());
+            var_dump($result_link->getLink());
         }
         else
            echo "Unexpected error : can't get link!!!";
@@ -57,7 +56,6 @@ function main() {
         $pdfLinks = new PdfLinks($configParams);
         $pdfLinks->uploadDocument();
         $pdfLinks->getPageLinkById();
-        $pdfLinks->downloadResult();
     } catch (\Exception $e) {
         echo "Error: " . $e->getMessage() . "\n";
     }

@@ -1,17 +1,17 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 use Aspose\PDF\Model\LinkAnnotation;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => 'PdfWithLinks.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
-    'PAGE_NUMBER' => 2,                                                         // Your document page number...
-    'LINK_REMOVE_ID' => 'GI5UO32UN5KVESKBMN2GS33OHMZTEMJMGUYDQLBTGYYCYNJSGE',   // Your link ID to replace...
+    'PAGE_NUMBER' => 1,                                                         // Your document page number...
+    'LINK_REMOVE_ID' => 'GE5UO32UN5KVESKBMN2GS33OHM4DQLBWGU3SYMJTGIWDMNZS',   // Your link ID to replace...
     'NEW_LINK_ACTION' => 'https://reference.aspose.cloud/pdf/#/',               // Your new link action for link ID...
 ];
 
@@ -20,11 +20,11 @@ class PdfLinks {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -36,19 +36,20 @@ class PdfLinks {
 
     public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $pdfFileData = file_get_contents($pdfFilePath);
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFilePath);
     }
 
     public function downloadResult() {
-        $changedPdfData = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
+        $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($filePath, $changedPdfData);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: " . $filePath . "\n";
     }
 
     public function getPageLinkById(): ?LinkAnnotation {
-        $result_link = $this->pdfApi->getPageLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER'], $this->configParams['LINK_FIND_ID']);
+        $result_link = $this->pdfApi->getPageLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['PAGE_NUMBER'], $this->configParams['LINK_REMOVE_ID']);
 
         if ($result_link->getCode() == 200) {
             echo "Found link:";
@@ -66,7 +67,7 @@ class PdfLinks {
 
         if ($link)
         {
-            $link->setAction($this->configParams['LNEW_LINK_ACTION']);
+            $link->setAction($this->configParams['NEW_LINK_ACTION']);
             
             $update_response = $this->pdfApi->putLinkAnnotation($this->configParams['PDF_DOCUMENT_NAME'], $this->configParams['LINK_REMOVE_ID'], $link);
 
@@ -83,7 +84,7 @@ class PdfLinks {
     }
 }
 
-$pdfLinks = new PdfLinks($configParams, $pdfApi);
+$pdfLinks = new PdfLinks($configParams);
 
 try {
     $pdfLinks->uploadDocument();

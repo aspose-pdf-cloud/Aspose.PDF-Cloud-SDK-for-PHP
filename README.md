@@ -52,8 +52,8 @@ composer install
 	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
 
 	$config = new Configuration();
-	$config->setAppSid('MY_CLIENT_ID');
-	$config->setAppKey('MY_CLIENT_SECRET');
+	$config->setClientId('MY_CLIENT_ID');
+	$config->setClientSecret('MY_CLIENT_SECRET');
 
 	$pdfApi = new PdfApi(null, $config);
 	$name = 'PdfWithAnnotations.pdf';
@@ -63,7 +63,7 @@ composer install
 ```
 
 ## SelfHost Aspose.PDF Cloud
-Create **Configuration** object without **AppSid** and **AppKey**, with **SelfHost** set to `true` and with **Host** set to *url of SelfHost Aspose.PDF Cloud*:
+Create **Configuration** object without **ClientId** and **ClientSecret**, with **SelfHost** set to `true` and with **Host** set to *url of SelfHost Aspose.PDF Cloud*:
 ```php
 	$config->setSelfHost(true);
 	$config->setHost('MY_SELF_HOST_URL');

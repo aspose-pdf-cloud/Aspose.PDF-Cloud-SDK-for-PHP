@@ -6,10 +6,10 @@ use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => 'PdfWithTable.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
-    'PAGE_NUMBER' => 2,
+    'PAGE_NUMBER' => 1,
 ];
 
 class PdfTables {
@@ -17,11 +17,11 @@ class PdfTables {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("../../../../Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
     }
@@ -33,14 +33,15 @@ class PdfTables {
 
     public function uploadDocument() {
         $fileNamePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $pdfFileData = file_get_contents($fileNamePath);
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $fileNamePath);
     }
 
     public function downloadResult() {
         $changedPdfData = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($filePath, $changedPdfData);
+        $changedPdfData->rewind();
+        $content = $changedPdfData->fread($changedPdfData->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: " . $filePath . "\n";
     }
 
@@ -62,7 +63,6 @@ class PdfTables {
         ];
     
         $table = new \Aspose\PDF\Model\Table();
-        $table->setRows([]);
         $table->setColumnWidths(str_repeat(" 70", $numOfCols));
     
         $borderTableBorder = new \Aspose\PDF\Model\GraphInfo();
@@ -79,10 +79,10 @@ class PdfTables {
         $table->setLeft(150);
         $table->setTop(250);
     
+        $rows = array();
         for ($rowIndex = 0; $rowIndex < $numOfRows; $rowIndex++) {
             $row = new \Aspose\PDF\Model\Row();
-            $row->setCells([]);
-    
+            $cells = array();
             for ($colIndex = 0; $colIndex < $numOfCols; $colIndex++) {
                 $cell = new \Aspose\PDF\Model\Cell();
                 $cell->setDefaultCellTextState($commonTextState);
@@ -98,10 +98,14 @@ class PdfTables {
                 $textRect->setText($rowIndex == 0 ? "header #" . $colIndex : "value #(" . $rowIndex . "," . $colIndex . ")");
                 $cell->setParagraphs([$textRect]);
     
-                $row->getCells()[] = $cell;
+                $cells[] = $cell;
             }
-            $table->getRows()[] = $row;
+
+            $row->setCells($cells);
+            $rows[] = $row;
         }
+
+        $table->setRows($rows);
         return $table;
     }
 

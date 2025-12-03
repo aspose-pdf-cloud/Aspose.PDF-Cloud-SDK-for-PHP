@@ -1,23 +1,23 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-$config = [
-    'LOCAL_FOLDER' => "C:\\Samples\\",
+$configParams = [
+    'LOCAL_FOLDER' => "testData/",
     'PDF_DOCUMENT_NAME' => "sample.pdf",
     'LOCAL_RESULT_DOCUMENT_NAME' => "output_sample.pdf",
-    'LOCAL_SIGNATURE_PATH' => "C:\\Samples\\Signatures\\3",
-    'SIGNATURE_PFX' => "signature.pfx",
-    'SIGNATURE_FORM_FIELD' => 'Signature_1',
-    'SIGNATURE_PASSWORD' => 'Password',
+    'LOCAL_SIGNATURE_PATH' => "testData",
+    'SIGNATURE_PFX' => "test1234.pfx",
+    'SIGNATURE_FORM_FIELD' => 'Signature1',
+    'SIGNATURE_PASSWORD' => 'test1234',
     'SIGNATURE_CONTACT' => 'Contact',
     'SIGNATURE_LOCATION' => 'Location',
-    'SIGNATURE_AUTHORITY' => 'Issuer',
+    'SIGNATURE_AUTHORITY' => 'Sergey Smal',
     'SIGNATURE_DATE' => '04/19/2025 12:15:00.000 PM',
-    'SIGNATURE_RECT' => new Aspose\PDF\Model\Rectangle(array('llx' => 100, 'lly' => 100, 'urx' => 0, 'ury' => 0))
+    'SIGNATURE_RECT' => new Aspose\PDF\Model\Rectangle(array('llx' => 100, 'lly' => 100, 'urx' => 500, 'ury' => 500))
 ];
 
 class PdfSignatures {
@@ -25,11 +25,11 @@ class PdfSignatures {
     private $config;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -41,8 +41,7 @@ class PdfSignatures {
 
     public function uploadFile($folder, $fileName) {
         $filePath = $folder . DIRECTORY_SEPARATOR . $fileName;
-        $data = file_get_contents($filePath);
-        $this->pdfApi->uploadFile($fileName, $data);
+        $this->pdfApi->uploadFile($fileName, $filePath);
         echo "File '$fileName' successfully uploaded!\n";
     }
 
@@ -53,7 +52,9 @@ class PdfSignatures {
     public function downloadResult() {
         $response = $this->pdfApi->downloadFile($this->config['PDF_DOCUMENT_NAME']);
         $filePath = $this->config['LOCAL_FOLDER'] . DIRECTORY_SEPARATOR . $this->config['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($filePath, $response->body);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: $filePath\n";
     }
 
@@ -68,7 +69,8 @@ class PdfSignatures {
             'rectangle' => $this->config['SIGNATURE_RECT'],
             'signature_path' => $this->config['SIGNATURE_PFX'],
             'signature_type' => \Aspose\PDF\Model\SignatureType::PKCS7,
-            'visible' => TRUE )
+            'visible' => TRUE,
+            'show_properties' => TRUE )
         );
 
         $field = new \Aspose\PDF\Model\SignatureField( array(
@@ -92,7 +94,7 @@ class PdfSignatures {
 }
 
 try {
-    $signatures = new PdfSignatures($pdfApi, $configParams);
+    $signatures = new PdfSignatures($configParams);
     $signatures->uploadFile($configParams['LOCAL_SIGNATURE_PATH'], $configParams['SIGNATURE_PFX']);
     $signatures->uploadDocument();
     $signatures->appenSignature();
