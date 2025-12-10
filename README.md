@@ -29,22 +29,14 @@ XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, Text
 ## Read PDF Formats
 MHT, PCL, PS, XSLFO, MD
 
-## Enhancements in Version 25.9
-- Implement PDF document page crop functionality using the Pdf.Cloud API library.
+## Enhancements in Version 25.10
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
 
+## Bugs fixed in Version 25.10
+- Method PutBookmark does not change bookmark color.
+- TextReplace shows hidden text in the output file.
 ## Requirements
 PHP 7.4 and later.
-
-## Unit Tests
-Aspose PDF SDK includes a suite of unit tests within the "tests" subdirectory. These Unit Tests also serves as examples of how to use the Aspose PDF SDK.
-
-To run the unit tests:
-
-```
-composer install
-./vendor/bin/phpunit
-```
 
 ## Get PDF Page Annotations in PHP
 
@@ -67,6 +59,33 @@ Create **Configuration** object without **ClientId** and **ClientSecret**, with 
 ```php
 	$config->setSelfHost(true);
 	$config->setHost('MY_SELF_HOST_URL');
+```
+
+## Use cases
+
+The Aspose.PDF Cloud SDK includes a set of ready-to-run use cases in the "[UsesCases](UsesCases)" directory. These examples illustrate common operations such as managing annotations, attachments, text, and more.
+
+1. Add your API credentials **client_id** and **client_secret** into [settings/credentials.json](settings/credentials.json):
+
+```
+{
+  "client_secret": "YOUR_CLIENT_SECRET",
+  "client_id": "YOUR_CLIENT_ID"
+}
+```
+2. Launch use case:
+```
+php UsesCases/Bookmarks/get/getBookmarksAndShow.php
+```
+
+## Unit Tests
+Aspose PDF SDK includes a suite of unit tests within the "tests" subdirectory. These Unit Tests also serves as examples of how to use the Aspose PDF SDK.
+
+To run the unit tests:
+
+```
+composer install
+./vendor/bin/phpunit
 ```
 
 ## Licensing
