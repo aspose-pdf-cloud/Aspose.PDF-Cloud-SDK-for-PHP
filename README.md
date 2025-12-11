@@ -29,6 +29,13 @@ XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, Text
 ## Read PDF Formats
 MHT, PCL, PS, XSLFO, MD
 
+## Breaking Changes in Version 25.10
+**Authentication Parameter Changes**:
+
+    AppId → ClientId
+
+    AppSecret → ClientSecret
+
 ## Enhancements in Version 25.10
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
 
