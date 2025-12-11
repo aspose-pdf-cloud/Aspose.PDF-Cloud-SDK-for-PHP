@@ -29,22 +29,21 @@ XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, Text
 ## Read PDF Formats
 MHT, PCL, PS, XSLFO, MD
 
-## Enhancements in Version 25.9
-- Implement PDF document page crop functionality using the Pdf.Cloud API library.
+## Breaking Changes in Version 25.10
+**Authentication Parameter Changes**:
+
+    AppId → ClientId
+
+    AppSecret → ClientSecret
+
+## Enhancements in Version 25.10
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
 
+## Bugs fixed in Version 25.10
+- Method PutBookmark does not change bookmark color.
+- TextReplace shows hidden text in the output file.
 ## Requirements
 PHP 7.4 and later.
-
-## Unit Tests
-Aspose PDF SDK includes a suite of unit tests within the "tests" subdirectory. These Unit Tests also serves as examples of how to use the Aspose PDF SDK.
-
-To run the unit tests:
-
-```
-composer install
-./vendor/bin/phpunit
-```
 
 ## Get PDF Page Annotations in PHP
 
@@ -52,8 +51,8 @@ composer install
 	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
 
 	$config = new Configuration();
-	$config->setAppSid('MY_CLIENT_ID');
-	$config->setAppKey('MY_CLIENT_SECRET');
+	$config->setClientId('MY_CLIENT_ID');
+	$config->setClientSecret('MY_CLIENT_SECRET');
 
 	$pdfApi = new PdfApi(null, $config);
 	$name = 'PdfWithAnnotations.pdf';
@@ -63,10 +62,37 @@ composer install
 ```
 
 ## SelfHost Aspose.PDF Cloud
-Create **Configuration** object without **AppSid** and **AppKey**, with **SelfHost** set to `true` and with **Host** set to *url of SelfHost Aspose.PDF Cloud*:
+Create **Configuration** object without **ClientId** and **ClientSecret**, with **SelfHost** set to `true` and with **Host** set to *url of SelfHost Aspose.PDF Cloud*:
 ```php
 	$config->setSelfHost(true);
 	$config->setHost('MY_SELF_HOST_URL');
+```
+
+## Use cases
+
+The Aspose.PDF Cloud SDK includes a set of ready-to-run use cases in the "[UsesCases](UsesCases)" directory. These examples illustrate common operations such as managing annotations, attachments, text, and more.
+
+1. Add your API credentials **client_id** and **client_secret** into [settings/credentials.json](settings/credentials.json):
+
+```
+{
+  "client_secret": "YOUR_CLIENT_SECRET",
+  "client_id": "YOUR_CLIENT_ID"
+}
+```
+2. Launch use case:
+```
+php UsesCases/Bookmarks/get/getBookmarksAndShow.php
+```
+
+## Unit Tests
+Aspose PDF SDK includes a suite of unit tests within the "tests" subdirectory. These Unit Tests also serves as examples of how to use the Aspose PDF SDK.
+
+To run the unit tests:
+
+```
+composer install
+./vendor/bin/phpunit
 ```
 
 ## Licensing

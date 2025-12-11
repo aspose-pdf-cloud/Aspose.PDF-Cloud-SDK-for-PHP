@@ -1,15 +1,12 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-// Загрузка JSON с учетными данными
-$credentials = json_decode(file_get_contents(__DIR__ . '/../../../Credentials/credentials.json'), true);
-
 $configParams = [
-    "LOCAL_FOLDER" => "C:\\Samples\\",
+    "LOCAL_FOLDER" => "testData",
     "TEMP_FOLDER" => "TempPdfCloud",
     "LOCAL_RESULT_DOCUMENT_NAME" => "output_sample.pdf",
     "PAGE_WIDTH" => 590,
@@ -23,11 +20,11 @@ class PdfPageChanges
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("../../../../Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
     }
@@ -40,9 +37,11 @@ class PdfPageChanges
     public function downloadResult()
     {
         $fileName = $this->configParams["TEMP_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["LOCAL_RESULT_DOCUMENT_NAME"];
-        $changedPdfData = $this->pdfApi->downloadFile($fileName);
+        $response = $this->pdfApi->downloadFile($fileName);
         $filePath = $this->configParams["LOCAL_FOLDER"] . DIRECTORY_SEPARATOR . $this->configParams["LOCAL_RESULT_DOCUMENT_NAME"];
-        file_put_contents($filePath, $changedPdfData->getBody());
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: " . $filePath . PHP_EOL;
     }
 
@@ -89,7 +88,7 @@ class PdfPageChanges
 }
 
 try {
-    $pdfManager = new PdfPageChanges($pdfApi, $configParams);
+    $pdfManager = new PdfPageChanges($configParams);
     $pdfManager->createPdfDocument();
     $pdfManager->downloadResult();
 } catch (Exception $e) {

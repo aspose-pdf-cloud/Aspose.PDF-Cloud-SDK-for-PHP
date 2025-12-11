@@ -68,16 +68,16 @@ class Configuration
     protected $host = 'https://api.aspose.cloud/v3.0';
 
     /*
-     * AppKey for API
+     * Client secret for API
      *
      */
-    protected $appKey = '';
+    protected $clientSecret = '';
     
     /*
-     * AppSid for API
+     * Client id for API
      * @var string
      */
-    protected $appSid = '';
+    protected $clientId = '';
 
     /**
      * User agent of the HTTP request, set to "PHP-Swagger" by default
@@ -139,47 +139,47 @@ class Configuration
     }
 
     /*
-     * Sets AppSid
+     * Sets client_id
      *
-     * @param string $appSid
+     * @param string $clientId
      *
      * @return $this
      */
-    public function setAppSid($appSid)
+    public function setClientId($clientId)
     {
-        $this->appSid = $appSid;
+        $this->clientId = $clientId;
         return $this;
     }
     
     /*
-     * Gets AppSid
-     * @return $appSid
+     * Gets client_id
+     * @return $clientId
      */
-    public function getAppSid()
+    public function getClientId()
     {
-        return $this->appSid;
+        return $this->clientId;
     }
     
     /*
-     * Sets AppKey
+     * Sets client secret
      *
-     * @param string $appKey
+     * @param string $clientSecret
      *
      * @return $this
      */
-    public function setAppKey($appKey)
+    public function setClientSecret($clientSecret)
     {
-        $this->appKey = $appKey;
+        $this->clientSecret = $clientSecret;
         return $this;
     }
     
     /*
-     * Gets AppKey
-     * @return $appKey
+     * Gets client secret
+     * @return $clientSecret
      */
-    public function getAppKey()
+    public function getClientSecret()
     {
-        return $this->appKey;
+        return $this->clientSecret;
     }
 
     /**
@@ -362,7 +362,7 @@ class Configuration
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 3.0' . PHP_EOL;
-        $report .= '    SDK Package Version: 25.9.0' . PHP_EOL;
+        $report .= '    SDK Package Version: 25.10.0' . PHP_EOL;
         $report .= '    Temp Folder Path: ' . self::getDefaultConfiguration()->getTempFolderPath() . PHP_EOL;
 
         return $report;

@@ -1,12 +1,12 @@
 <?php
 
-require_once __DIR__ . '\comparesHelper.php';
+require_once 'comparesHelper.php';
 
 $configParams = [
-    'LOCAL_FOLDER'   => "C:\\Samples\\",
+    'LOCAL_FOLDER'   => "testData",
     'REMOTE_FOLDER'  => "Your_Temp_Pdf_Cloud",
-    'PDF_DOCUMENT_1' => "sample_compare_1.pdf",
-    'PDF_DOCUMENT_2' => "sample_compare_2.pdf",
+    'PDF_DOCUMENT_1' => "sample.pdf",
+    'PDF_DOCUMENT_2' => "sample_edited.pdf",
     'PDF_OUTPUT'     => "output_compare.pdf"
 ];
 

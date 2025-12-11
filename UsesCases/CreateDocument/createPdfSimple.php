@@ -1,17 +1,22 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
+use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 // Load credentials. Format must be {"id": "*****", "key": "****"}
-$credentials = json_decode(file_get_contents(__DIR__ . '/../../../Credentials/credentials.json'), true);
+$credentials = json_decode(file_get_contents(__DIR__ . '/settings/credentials.json'), true);
 
-$localFolder = "C:\\Samples\\";
+$localFolder = "testData";
 $pdfDocument = "output_sample.pdf";
 
 // Create Pdf Rest API object
-$pdfApi = new PdfApi($credentials["id"], $credentials["key"]);
+$configAuth = new Configuration();
+$configAuth->setClientSecret($credentials['client_secret']);
+$configAuth->setClientId($credentials['client_id']);
+
+$pdfApi = new PdfApi(null, $configAuth);
 
 try {
     // Create empty Pdf document
@@ -24,7 +29,9 @@ try {
         $downloaded = $pdfApi->downloadFile($pdfDocument);
 
         $filePath = $localFolder . DIRECTORY_SEPARATOR . $pdfDocument;
-        file_put_contents($filePath, $downloaded->getBody());
+        $downloaded->rewind();
+        $content = $downloaded->fread($downloaded->getSize());
+        file_put_contents($filePath, $content);
 
         echo "Downloaded: " . $filePath . PHP_EOL;
     } else {

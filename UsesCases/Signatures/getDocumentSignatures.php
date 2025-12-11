@@ -1,13 +1,13 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-$config = [
-    'LOCAL_FOLDER' => "C:\\Samples\\",
-    'PDF_DOCUMENT_NAME' => "sample-signed.pdf",
+$configParams = [
+    'LOCAL_FOLDER' => "testData/",
+    'PDF_DOCUMENT_NAME' => "adbe.x509.rsa_sha1.valid.pdf",
 ];
 
 class PdfSignatures {
@@ -15,11 +15,11 @@ class PdfSignatures {
     private $config;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -31,18 +31,16 @@ class PdfSignatures {
 
     public function uploadDocument() {
         $filePath = $this->config['LOCAL_FOLDER'] . $this->config['PDF_DOCUMENT_NAME'];
-        $fileData = file_get_contents($filePath);
-
-        $this->pdfApi->uploadFile($this->config['PDF_DOCUMENT_NAME'], $fileData);
+        $this->pdfApi->uploadFile($this->config['PDF_DOCUMENT_NAME'], $filePath);
         echo "File: '{$this->config['PDF_DOCUMENT_NAME']}' successfully uploaded.\n";
     }
 
     private function _showSignatureFieldsArray($fields): void {
-        if (empty($fields->list)) {
+        if (empty($fields->getList())) {
             echo "Signature fields are empty!";
         } else {
-            foreach ($fields->list as $item) {
-                echo "Signature field ID: '" . $item->signature->contact . "'";
+            foreach ($fields->getList() as $item) {
+                echo "Signature field ID: '" . $item->getSignature()->getContact() . "'";
             }
         }
     }
@@ -50,9 +48,9 @@ class PdfSignatures {
     public function getSignatureFields(): void {
         if ($this->pdfApi) {
             $response = $this->pdfApi->getDocumentSignatureFields($this->config['PDF_DOCUMENT_NAME']);
-            if ($response->code === 200) {
+            if ($response->getCode() === 200) {
                 echo "getSignatureFields(): Signature fields successfully extracted from '" . $this->config['PDF_DOCUMENT_NAME'] . "':";
-                $this->_showSignatureFieldsArray($response->fields);
+                $this->_showSignatureFieldsArray($response->getFields());
             } else
                 echo "getSignatureFields(): Failed to extract signatures. Response code: " . $response->code;
         }
@@ -60,7 +58,7 @@ class PdfSignatures {
 }
 
 try {
-    $signatures = new PdfSignatures($pdfApi, $configParams);
+    $signatures = new PdfSignatures($configParams);
     $signatures->uploadDocument();
     $signatures->getSignatureFields();
 } catch (Exception $e) {

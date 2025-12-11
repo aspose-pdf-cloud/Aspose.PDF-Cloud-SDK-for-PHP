@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\Color;
@@ -12,15 +12,15 @@ use Aspose\PDF\Model\LinkActionType;
 use Aspose\PDF\Api\PdfApi;
 
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => 'PdfWithLinks.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
     'NEW_LINK_ACTION' => 'https://reference.aspose.cloud/pdf/#/',
-    'PAGE_NUMBER' => 2,     // Your document page number...
-    'LINK_POS_LLX' => 244.914,
-    'LINK_POS_LLY' => 488.622,
-    'LINK_POS_URX' => 284.776,
-    'LINK_POS_URY' => 498.588,
+    'PAGE_NUMBER' => 1,     // Your document page number...
+    'LINK_POS_LLX' => 70,
+    'LINK_POS_LLY' => 731.229,
+    'LINK_POS_URX' => 90,
+    'LINK_POS_URY' => 745.185,
 ];
 
 class PdfLinks {
@@ -28,11 +28,11 @@ class PdfLinks {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -44,14 +44,15 @@ class PdfLinks {
 
     public function uploadDocument() {
         $pdfFilePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $pdfFileData = file_get_contents($pdfFilePath);
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $pdfFilePath);
     }
 
     public function downloadResult() {
-        $changedPdfData = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
+        $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($filePath, $changedPdfData);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($filePath, $content);
         echo "Downloaded: " . $filePath . "\n";
     }
 

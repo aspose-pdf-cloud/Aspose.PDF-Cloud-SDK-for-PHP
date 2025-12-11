@@ -1,17 +1,15 @@
 <?php
 
-require __DIR__.'\..\..\vendor\autoload.php';
+require __DIR__.'/../../vendor/autoload.php';
 
 use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
-$credentials = json_decode(file_get_contents(__DIR__ . "/../../../Credentials/credentials.json"), true);
-
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
-    'PDF_DOCUMENT_NAME' => 'sample_encrypted.pdf',
+    'LOCAL_FOLDER' => 'testData/',
+    'PDF_DOCUMENT_NAME' => '4pagesEncrypted.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
-    'DOCUMENT_PASSWORD' => 'Owner-Password',
+    'DOCUMENT_PASSWORD' => 'user $^Password!&',
 ];
 
 class PdfEncoder {
@@ -19,11 +17,11 @@ class PdfEncoder {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -35,16 +33,16 @@ class PdfEncoder {
 
     public function uploadDocument() {
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $fileData = file_get_contents($filePath);
-
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $fileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $filePath);
         echo "File: '{$this->configParams['PDF_DOCUMENT_NAME']}' successfully uploaded.\n";
     }
 
     public function downloadResult() {
-        $result = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
+        $response = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $outputPath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($outputPath, $result['body']);
+        $response->rewind();
+        $content = $response->fread($response->getSize());
+        file_put_contents($outputPath, $content);
         echo "Downloaded: {$outputPath}\n";
     }
 
@@ -56,7 +54,7 @@ class PdfEncoder {
             $documentPassword
         );
 
-        if ($response['body']['code'] == 200) {
+        if ($response->getCode() == 200) {
             echo "decryptDocument(): Document '{$this->configParams['PDF_DOCUMENT_NAME']}' successfully decryped.\n";
         } else {
             throw new Exception("decryptDocument(): Failed to decrypt document '{$this->configParams['PDF_DOCUMENT_NAME']}'. Response code: {$response['code']}");

@@ -6,10 +6,8 @@ use Aspose\PDF\Configuration;
 use Aspose\PDF\Model\CryptoAlgorithm;
 use Aspose\PDF\Api\PdfApi;
 
-$credentials = json_decode(file_get_contents(__DIR__ . "/../../../Credentials/credentials.json"), true);
-
 $configParams = [
-    'LOCAL_FOLDER' => 'C:\\Samples\\',
+    'LOCAL_FOLDER' => 'testData/',
     'PDF_DOCUMENT_NAME' => 'sample.pdf',
     'LOCAL_RESULT_DOCUMENT_NAME' => 'output_sample.pdf',
     'ENCRYPT_ALGORITHM' => CryptoAlgorithm::AE_SX256,
@@ -22,11 +20,11 @@ class PdfEncoder {
     private $configParams;
 
     private function _create_rest_api() {
-        $credentials = json_decode(file_get_contents("./Credentials/credentials.json"), true);
+        $credentials = json_decode(file_get_contents("./settings/credentials.json"), true);
 
         $configAuth = new Configuration();
-        $configAuth->setAppKey($credentials['key']);
-        $configAuth->setAppSid($credentials['id']);
+        $configAuth->setClientSecret($credentials['client_secret']);
+        $configAuth->setClientId($credentials['client_id']);
 
         $this->pdfApi = new PdfApi(null, $configAuth);
      }
@@ -38,16 +36,16 @@ class PdfEncoder {
 
     public function uploadDocument() {
         $filePath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['PDF_DOCUMENT_NAME'];
-        $fileData = file_get_contents($filePath);
-
-        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $fileData);
+        $this->pdfApi->uploadFile($this->configParams['PDF_DOCUMENT_NAME'], $filePath);
         echo "File: '{$this->configParams['PDF_DOCUMENT_NAME']}' successfully uploaded.\n";
     }
 
     public function downloadResult() {
         $result = $this->pdfApi->downloadFile($this->configParams['PDF_DOCUMENT_NAME']);
         $outputPath = $this->configParams['LOCAL_FOLDER'] . $this->configParams['LOCAL_RESULT_DOCUMENT_NAME'];
-        file_put_contents($outputPath, $result['body']);
+        $result->rewind();
+        $content = $result->fread($result->getSize());
+        file_put_contents($outputPath, $content);
         echo "Downloaded: {$outputPath}\n";
     }
 
@@ -62,7 +60,7 @@ class PdfEncoder {
             $this->configParams['ENCRYPT_ALGORITHM']
         );
 
-        if ($response['body']['code'] == 200) {
+        if ($response->getCode() == 200) {
             echo "encryptDocument(): Document '{$this->configParams['PDF_DOCUMENT_NAME']}' successfully encrypted.\n";
         } else {
             throw new Exception("encryptDocument(): Failed to encrypt document '{$this->configParams['PDF_DOCUMENT_NAME']}'. Response code: {$response['code']}");

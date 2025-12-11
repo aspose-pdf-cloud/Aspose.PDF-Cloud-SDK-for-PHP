@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '\comparePdfDocuments.php';
+require __DIR__.'/../../vendor/autoload.php';
+
+require_once 'comparePdfDocuments.php';
 
 try {
     $comparer = new PdfCompares($helper, $pdfApi, $configParams);
