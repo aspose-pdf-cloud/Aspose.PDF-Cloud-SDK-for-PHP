@@ -29,19 +29,8 @@ XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, Text
 ## Read PDF Formats
 MHT, PCL, PS, XSLFO, MD
 
-## Breaking Changes in Version 25.10
-**Authentication Parameter Changes**:
-
-    AppId → ClientId
-
-    AppSecret → ClientSecret
-
-## Enhancements in Version 25.10
+## Enhancements in Version 25.11
 - A new version of Aspose.PDF Cloud was prepared using the latest version of Aspose.PDF for .NET.
-
-## Bugs fixed in Version 25.10
-- Method PutBookmark does not change bookmark color.
-- TextReplace shows hidden text in the output file.
 ## Requirements
 PHP 7.4 and later.
 
@@ -70,9 +59,9 @@ Create **Configuration** object without **ClientId** and **ClientSecret**, with 
 
 ## Use cases
 
-The Aspose.PDF Cloud SDK includes a set of ready-to-run use cases in the "[UsesCases](UsesCases)" directory. These examples illustrate common operations such as managing annotations, attachments, text, and more.
+The Aspose.PDF Cloud SDK includes a set of ready-to-run use cases in the "[UsesCases](https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php/tree/master/UsesCases)" directory. These examples illustrate common operations such as managing annotations, attachments, text, and more.
 
-1. Add your API credentials **client_id** and **client_secret** into [settings/credentials.json](settings/credentials.json):
+1. Add your API credentials **client_id** and **client_secret** into [settings/credentials.json](https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php/tree/master/settings/credentials.json):
 
 ```
 {
