@@ -17,15 +17,11 @@
   ```
 
 #### Compares
-- **[Compares/comparePdfDocuments.php](Compares/comparePdfDocuments.php)** – Compares two uploaded PDF documents and generates a new PDF highlighting the differences between them.
-  ```bash
-  php UsesCases/Compares/comparePdfDocuments.php
-  ```
-- *[Compares/comparesHelper.php](Compares/comparesHelper.php)* – Provides helper functions for file upload, download, and path management in PDF comparison tasks.
 - **[Compares/comparesLaunch.php](Compares/comparesLaunch.php)** – Launches a PDF comparison process between two specified documents and downloads the result.
   ```bash
   php UsesCases/Compares/comparesLaunch.php
   ```
+- *[Compares/comparesHelper.php](Compares/comparesHelper.php)* – Provides helper functions for file upload, download, and path management in PDF comparison tasks.
 
 #### CompressDocument
 - **[CompressDocument/compressPdf.php](CompressDocument/compressPdf.php)** – Uploads a PDF document, compresses it with specific optimization settings (images, fonts, streams), and downloads the smaller file.
