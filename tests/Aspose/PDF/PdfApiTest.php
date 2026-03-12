@@ -3209,6 +3209,38 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $this->assertNotNull($response);
     }
 
+
+    public function testGetPdfInStorageToAps()
+    {
+        $name = '5pages.pdf';
+        $this->uploadFile($name);
+        $folder = $this->tempFolder;
+        $response = $this->pdfApi->getPdfInStorageToAps($name, $folder);
+        $this->assertNotNull($response);        
+    }
+        
+
+    public function testPutPdfInStorageToAps()
+    {
+        $name = '5pages.pdf';
+        $this->uploadFile($name);
+
+        $folder = $this->tempFolder;
+        $resFileName = "result.xml";
+        
+        $response = $this->pdfApi->putPdfInStorageToAps($name, $this->tempFolder . '/' . $resFileName, $folder);
+        $this->assertNotNull($response);
+    }
+
+    public function testPutPdfInRequestToAps()
+    {
+        $name = '5pages.pdf';
+        $file = realpath(__DIR__ . '/../../..') . '/testData/' . $name;
+        $resFileName = "result.xml";
+        $response = $this->pdfApi->putPdfInRequestToAps($this->tempFolder . '/' . $resFileName, null, $file);
+        $this->assertNotNull($response);
+    }
+
     public function testGetXfaPdfInStorageToAcroForm()
     {
         $name = 'PdfWithXfaForm.pdf';
@@ -3565,6 +3597,30 @@ class PdfApiTest extends PHPUnit\Framework\TestCase
         $resultName = "fromXml.pdf";
 
         $response = $this->pdfApi->putXmlInStorageToPdf($resultName, $src_path, $xsl_file_path = null, $dst_folder = $this->tempFolder);
+        $this->assertEquals(200, $response->getCode());
+    }
+
+
+    public function testGetApsInStorageToPdf()
+    {
+        $name = "5pages.aps";
+        $this->uploadFile($name);
+
+        $src_path = $this->tempFolder . '/' . $name;
+
+        $response = $this->pdfApi->getApsInStorageToPdf($src_path);
+        $this->assertGreaterThan(0, $response->getSize());
+    }
+
+    public function testPutApsInStorageToPdf()
+    {
+        $name = "5pages.aps";
+        $this->uploadFile($name);
+
+        $src_path = $this->tempFolder . '/' . $name;
+        $resultName = "fromXml.pdf";
+
+        $response = $this->pdfApi->putApsInStorageToPdf($resultName, $src_path, $dst_folder = $this->tempFolder);
         $this->assertEquals(200, $response->getCode());
     }
 
