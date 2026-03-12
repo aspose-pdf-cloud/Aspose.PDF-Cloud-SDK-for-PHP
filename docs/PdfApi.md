@@ -30,6 +30,7 @@ Method | HTTP request | Description
 [**deleteStamp**](PdfApi.md#deleteStamp) | **DELETE** /pdf/{name}/stamps/{stampId} | Delete document stamp by ID
 [**deleteTable**](PdfApi.md#deleteTable) | **DELETE** /pdf/{name}/tables/{tableId} | Delete document table by ID
 [**downloadFile**](PdfApi.md#downloadFile) | **GET** /pdf/storage/file/{path} | Download file
+[**getApsInStorageToPdf**](PdfApi.md#getApsInStorageToPdf) | **GET** /pdf/create/aps | Convert APS file (located on storage) to PDF format and return resulting file in response. 
 [**getBookmark**](PdfApi.md#getBookmark) | **GET** /pdf/{name}/bookmarks/bookmark/{bookmarkPath} | Read document bookmark.
 [**getBookmarks**](PdfApi.md#getBookmarks) | **GET** /pdf/{name}/bookmarks/list/{bookmarkPath} | Read document bookmarks node list.
 [**getCaretAnnotation**](PdfApi.md#getCaretAnnotation) | **GET** /pdf/{name}/annotations/caret/{annotationId} | Read document page caret annotation by ID.
@@ -148,6 +149,7 @@ Method | HTTP request | Description
 [**getPageUnderlineAnnotations**](PdfApi.md#getPageUnderlineAnnotations) | **GET** /pdf/{name}/pages/{pageNumber}/annotations/underline | Read document page underline annotations.
 [**getPclInStorageToPdf**](PdfApi.md#getPclInStorageToPdf) | **GET** /pdf/create/pcl | Convert PCL file (located on storage) to PDF format and return resulting file in response. 
 [**getPdfAInStorageToPdf**](PdfApi.md#getPdfAInStorageToPdf) | **GET** /pdf/create/pdfa | Convert PDFA file (located on storage) to PDF format and return resulting file in response. 
+[**getPdfInStorageToAps**](PdfApi.md#getPdfInStorageToAps) | **GET** /pdf/{name}/convert/aps | Converts PDF document (located on storage) to APS format and returns resulting file in response content
 [**getPdfInStorageToDoc**](PdfApi.md#getPdfInStorageToDoc) | **GET** /pdf/{name}/convert/doc | Converts PDF document (located on storage) to DOC format and returns resulting file in response content.
 [**getPdfInStorageToEpub**](PdfApi.md#getPdfInStorageToEpub) | **GET** /pdf/{name}/convert/epub | Converts PDF document (located on storage) to EPUB format and returns resulting file in response content
 [**getPdfInStorageToHtml**](PdfApi.md#getPdfInStorageToHtml) | **GET** /pdf/{name}/convert/html | Converts PDF document (located on storage) to Html format and returns resulting file in response content
@@ -271,6 +273,7 @@ Method | HTTP request | Description
 [**putAddNewPage**](PdfApi.md#putAddNewPage) | **PUT** /pdf/{name}/pages | Add new page to end of the document.
 [**putAddText**](PdfApi.md#putAddText) | **PUT** /pdf/{name}/pages/{pageNumber}/text | Add text to PDF document page.
 [**putAnnotationsFlatten**](PdfApi.md#putAnnotationsFlatten) | **PUT** /pdf/{name}/annotations/flatten | Flattens the annotations of the specified types
+[**putApsInStorageToPdf**](PdfApi.md#putApsInStorageToPdf) | **PUT** /pdf/{name}/create/aps | Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
 [**putBookmark**](PdfApi.md#putBookmark) | **PUT** /pdf/{name}/bookmarks/bookmark/{bookmarkPath} | Update document bookmark.
 [**putCaretAnnotation**](PdfApi.md#putCaretAnnotation) | **PUT** /pdf/{name}/annotations/caret/{annotationId} | Replace document caret annotation
 [**putChangePasswordDocument**](PdfApi.md#putChangePasswordDocument) | **PUT** /pdf/changepassword | Change document password from content.
@@ -321,6 +324,7 @@ Method | HTTP request | Description
 [**putPageConvertToTiff**](PdfApi.md#putPageConvertToTiff) | **PUT** /pdf/{name}/pages/{pageNumber}/convert/tiff | Convert document page to Tiff image and upload resulting file to storage.
 [**putPclInStorageToPdf**](PdfApi.md#putPclInStorageToPdf) | **PUT** /pdf/{name}/create/pcl | Convert PCL file (located on storage) to PDF format and upload resulting file to storage. 
 [**putPdfAInStorageToPdf**](PdfApi.md#putPdfAInStorageToPdf) | **PUT** /pdf/{name}/create/pdfa | Convert PDFA file (located on storage) to PDF format and upload resulting file to storage. 
+[**putPdfInRequestToAps**](PdfApi.md#putPdfInRequestToAps) | **PUT** /pdf/convert/aps | Converts PDF document (in request content) to APS format and uploads resulting file to storage.
 [**putPdfInRequestToDoc**](PdfApi.md#putPdfInRequestToDoc) | **PUT** /pdf/convert/doc | Converts PDF document (in request content) to DOC format and uploads resulting file to storage.
 [**putPdfInRequestToEpub**](PdfApi.md#putPdfInRequestToEpub) | **PUT** /pdf/convert/epub | Converts PDF document (in request content) to EPUB format and uploads resulting file to storage.
 [**putPdfInRequestToHtml**](PdfApi.md#putPdfInRequestToHtml) | **PUT** /pdf/convert/html | Converts PDF document (in request content) to Html format and uploads resulting file to storage.
@@ -334,6 +338,7 @@ Method | HTTP request | Description
 [**putPdfInRequestToXlsx**](PdfApi.md#putPdfInRequestToXlsx) | **PUT** /pdf/convert/xlsx | Converts PDF document (in request content) to XLSX format and uploads resulting file to storage.
 [**putPdfInRequestToXml**](PdfApi.md#putPdfInRequestToXml) | **PUT** /pdf/convert/xml | Converts PDF document (in request content) to XML format and uploads resulting file to storage.
 [**putPdfInRequestToXps**](PdfApi.md#putPdfInRequestToXps) | **PUT** /pdf/convert/xps | Converts PDF document (in request content) to XPS format and uploads resulting file to storage.
+[**putPdfInStorageToAps**](PdfApi.md#putPdfInStorageToAps) | **PUT** /pdf/{name}/convert/aps | Converts PDF document (located on storage) to APS format and uploads resulting file to storage
 [**putPdfInStorageToDoc**](PdfApi.md#putPdfInStorageToDoc) | **PUT** /pdf/{name}/convert/doc | Converts PDF document (located on storage) to DOC format and uploads resulting file to storage.
 [**putPdfInStorageToEpub**](PdfApi.md#putPdfInStorageToEpub) | **PUT** /pdf/{name}/convert/epub | Converts PDF document (located on storage) to EPUB format and uploads resulting file to storage
 [**putPdfInStorageToHtml**](PdfApi.md#putPdfInStorageToHtml) | **PUT** /pdf/{name}/convert/html | Converts PDF document (located on storage) to Html format and uploads resulting file to storage
@@ -972,6 +977,27 @@ Name | Type | Description  | Notes
 **$path** | **string** | File path e.g. '/folder/file.ext' | 
 **$storage_name** | **string** | Storage name | [optional]
 **$version_id** | **string** | File version ID to download | [optional]
+
+### Return type
+
+**\SplFileObject**
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: multipart/form-data
+
+<a name="getApsInStorageToPdf"></a>
+## **getApsInStorageToPdf**
+> \SplFileObject getApsInStorageToPdf($src_path, $storage)
+
+Convert APS file (located on storage) to PDF format and return resulting file in response. 
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.xps) | 
+**$storage** | **string** | The document storage. | [optional]
 
 ### Return type
 
@@ -3684,6 +3710,28 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.pdf) | 
 **$dont_optimize** | **bool** | If set, document resources will not be optimized. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+
+### Return type
+
+**\SplFileObject**
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: multipart/form-data
+
+<a name="getPdfInStorageToAps"></a>
+## **getPdfInStorageToAps**
+> \SplFileObject getPdfInStorageToAps($name, $folder, $storage)
+
+Converts PDF document (located on storage) to APS format and returns resulting file in response content
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$folder** | **string** | The document folder. | [optional]
 **$storage** | **string** | The document storage. | [optional]
 
 ### Return type
@@ -6674,6 +6722,29 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="putApsInStorageToPdf"></a>
+## **putApsInStorageToPdf**
+> \Aspose\PDF\Model\AsposeResponse putApsInStorageToPdf($name, $src_path, $dst_folder, $storage)
+
+Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$src_path** | **string** | Full source filename (ex. /folder1/folder2/template.xps) | 
+**$dst_folder** | **string** | The destination document folder. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="putBookmark"></a>
 ## **putBookmark**
 > \Aspose\PDF\Model\BookmarkResponse putBookmark($name, $bookmark_path, $bookmark, $folder, $storage, $password)
@@ -7910,6 +7981,28 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="putPdfInRequestToAps"></a>
+## **putPdfInRequestToAps**
+> \Aspose\PDF\Model\AsposeResponse putPdfInRequestToAps($out_path, $storage, $file)
+
+Converts PDF document (in request content) to APS format and uploads resulting file to storage.
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$out_path** | **string** | Full resulting filename (ex. /folder1/folder2/result.aps) | 
+**$storage** | **string** | The document storage. | [optional]
+**$file** | **\SplFileObject** | A file to be converted. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
 <a name="putPdfInRequestToDoc"></a>
 ## **putPdfInRequestToDoc**
 > \Aspose\PDF\Model\AsposeResponse putPdfInRequestToDoc($out_path, $add_return_to_line_end, $format, $image_resolution_x, $image_resolution_y, $max_distance_between_text_lines, $mode, $recognize_bullets, $relative_horizontal_proximity, $storage, $password, $file)
@@ -8265,6 +8358,29 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+<a name="putPdfInStorageToAps"></a>
+## **putPdfInStorageToAps**
+> \Aspose\PDF\Model\AsposeResponse putPdfInStorageToAps($name, $out_path, $folder, $storage)
+
+Converts PDF document (located on storage) to APS format and uploads resulting file to storage
+
+### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**$name** | **string** | The document name. | 
+**$out_path** | **string** | Full resulting filename (ex. /folder1/folder2/result.aps) | 
+**$folder** | **string** | The document folder. | [optional]
+**$storage** | **string** | The document storage. | [optional]
+
+### Return type
+
+[**\Aspose\PDF\Model\AsposeResponse**](AsposeResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="putPdfInStorageToDoc"></a>
