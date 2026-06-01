@@ -362,7 +362,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -655,7 +655,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -924,7 +924,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -1257,7 +1257,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -1599,7 +1599,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -1913,7 +1913,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -2236,7 +2236,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -2589,7 +2589,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -2903,7 +2903,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -3226,7 +3226,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -3540,7 +3540,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -3873,7 +3873,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -4151,7 +4151,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -4429,7 +4429,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -4762,7 +4762,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -5095,7 +5095,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -5428,7 +5428,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -5761,7 +5761,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -6094,7 +6094,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -6436,7 +6436,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -6769,7 +6769,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -7092,7 +7092,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -7434,7 +7434,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -7776,7 +7776,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -8109,7 +8109,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -8423,7 +8423,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -8724,7 +8724,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -9066,7 +9066,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -9408,7 +9408,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -9741,7 +9741,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -10074,7 +10074,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -10407,7 +10407,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -10740,7 +10740,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -11026,7 +11026,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -11349,7 +11349,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -11663,7 +11663,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -11996,7 +11996,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -12310,7 +12310,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -12633,7 +12633,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -12947,7 +12947,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -13261,7 +13261,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -13575,7 +13575,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -13889,7 +13889,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -14203,7 +14203,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -14517,7 +14517,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -14831,7 +14831,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -15145,7 +15145,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -15459,7 +15459,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -15782,7 +15782,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -16096,7 +16096,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -16410,7 +16410,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -16724,7 +16724,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -17038,7 +17038,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -17352,7 +17352,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -17666,7 +17666,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -17999,7 +17999,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -18322,7 +18322,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -18664,7 +18664,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -18978,7 +18978,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -19292,7 +19292,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -19606,7 +19606,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -19920,7 +19920,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -20234,7 +20234,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -20548,7 +20548,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -20862,7 +20862,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -21176,7 +21176,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -21490,7 +21490,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -21804,7 +21804,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -22118,7 +22118,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -22432,7 +22432,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -22746,7 +22746,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -23060,7 +23060,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -23393,7 +23393,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -23694,7 +23694,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -24008,7 +24008,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -24322,7 +24322,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -24636,7 +24636,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -24969,7 +24969,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -25283,7 +25283,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -25616,7 +25616,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -25949,7 +25949,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -26254,7 +26254,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -26559,7 +26559,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -26892,7 +26892,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -27225,7 +27225,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -27598,7 +27598,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -27931,7 +27931,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -28282,7 +28282,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -28633,7 +28633,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -28984,7 +28984,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -29335,7 +29335,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -29668,7 +29668,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -30010,7 +30010,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -30339,7 +30339,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -30668,7 +30668,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -30997,7 +30997,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -31330,7 +31330,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -31663,7 +31663,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -31996,7 +31996,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -32329,7 +32329,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -32630,7 +32630,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -32985,7 +32985,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -33318,7 +33318,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -33651,7 +33651,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -33984,7 +33984,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -34317,7 +34317,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -34650,7 +34650,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -34983,7 +34983,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -35316,7 +35316,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -35676,7 +35676,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -36036,7 +36036,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -36396,7 +36396,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -36756,7 +36756,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -37116,7 +37116,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -37476,7 +37476,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -37809,7 +37809,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -38142,7 +38142,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -38475,7 +38475,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -38808,7 +38808,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -39141,7 +39141,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -39493,7 +39493,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -39826,7 +39826,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -40159,7 +40159,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -40492,7 +40492,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -40825,7 +40825,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -41158,7 +41158,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -41491,7 +41491,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -41824,7 +41824,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -42157,7 +42157,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -42490,7 +42490,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -42823,7 +42823,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -43156,7 +43156,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -43489,7 +43489,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -43822,7 +43822,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -44155,7 +44155,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -44497,7 +44497,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -44830,7 +44830,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -45163,7 +45163,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -45583,7 +45583,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -45916,7 +45916,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -46249,7 +46249,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -46582,7 +46582,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -46896,7 +46896,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -47197,7 +47197,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -47507,7 +47507,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -47821,7 +47821,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -48216,7 +48216,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -48539,7 +48539,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -49114,7 +49114,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -49428,7 +49428,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -49766,7 +49766,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -50107,7 +50107,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -50439,7 +50439,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -50753,7 +50753,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -51067,7 +51067,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -51516,7 +51516,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -51875,7 +51875,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -52234,7 +52234,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -52548,7 +52548,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -52862,7 +52862,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -53195,7 +53195,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -53528,7 +53528,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -53861,7 +53861,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -54162,7 +54162,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -54495,7 +54495,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -54828,7 +54828,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -55161,7 +55161,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -55494,7 +55494,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -55827,7 +55827,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -56160,7 +56160,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -56493,7 +56493,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -56826,7 +56826,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -57159,7 +57159,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -57492,7 +57492,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -57825,7 +57825,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -58158,7 +58158,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -58531,7 +58531,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -58864,7 +58864,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -59165,7 +59165,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -59566,7 +59566,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -59899,7 +59899,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -60232,7 +60232,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -60565,7 +60565,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -60894,7 +60894,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -61258,7 +61258,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -61572,7 +61572,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -61886,7 +61886,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -62196,7 +62196,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -62519,7 +62519,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -62842,7 +62842,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -63143,7 +63143,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -63444,7 +63444,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -63746,7 +63746,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -64039,7 +64039,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -64353,7 +64353,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -64681,7 +64681,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -65028,7 +65028,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -65384,7 +65384,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -65743,7 +65743,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -66071,7 +66071,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -66399,7 +66399,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -66730,7 +66730,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -67058,7 +67058,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -67401,7 +67401,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -67730,7 +67730,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -68076,7 +68076,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -68422,7 +68422,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -68759,7 +68759,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -69096,7 +69096,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -69451,7 +69451,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -69803,7 +69803,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -70171,7 +70171,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -70524,7 +70524,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -70870,7 +70870,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -71216,7 +71216,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -71544,7 +71544,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -71881,7 +71881,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -72218,7 +72218,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -72595,7 +72595,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -72936,7 +72936,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -73285,7 +73285,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -73613,7 +73613,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -73941,7 +73941,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -74269,7 +74269,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -74685,7 +74685,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -75013,7 +75013,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -75361,7 +75361,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -75689,7 +75689,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -76041,7 +76041,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -76360,7 +76360,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -76707,7 +76707,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -77069,7 +77069,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -77416,7 +77416,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -77763,7 +77763,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -78110,7 +78110,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -78457,7 +78457,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -78813,7 +78813,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -79160,7 +79160,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -79507,7 +79507,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -79854,7 +79854,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -80201,7 +80201,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -80557,7 +80557,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -80904,7 +80904,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -81251,7 +81251,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -81607,7 +81607,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -81954,7 +81954,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -82301,7 +82301,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -82648,7 +82648,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -82995,7 +82995,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -83342,7 +83342,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -83689,7 +83689,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -84036,7 +84036,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -84383,7 +84383,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -84730,7 +84730,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -85086,7 +85086,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -85433,7 +85433,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -85760,7 +85760,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -86107,7 +86107,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -86435,7 +86435,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -86763,7 +86763,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -87110,7 +87110,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -87438,7 +87438,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -87788,7 +87788,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -88125,7 +88125,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -88453,7 +88453,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -88790,7 +88790,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -89104,7 +89104,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -89451,7 +89451,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -89792,7 +89792,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -90121,7 +90121,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -90477,7 +90477,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -90824,7 +90824,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -91184,7 +91184,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -91531,7 +91531,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -91878,7 +91878,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -92225,7 +92225,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -92539,7 +92539,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -92907,7 +92907,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -93237,7 +93237,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -93565,7 +93565,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -93943,7 +93943,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -94272,7 +94272,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -94601,7 +94601,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -94930,7 +94930,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -95259,7 +95259,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -95573,7 +95573,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -95920,7 +95920,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -96262,7 +96262,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -96609,7 +96609,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -96956,7 +96956,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -97357,7 +97357,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -97717,7 +97717,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -98077,7 +98077,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -98437,7 +98437,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -98797,7 +98797,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -99125,7 +99125,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -99485,7 +99485,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -99845,7 +99845,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -100205,7 +100205,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -100565,7 +100565,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -100894,7 +100894,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -101223,7 +101223,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -101552,7 +101552,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -101899,7 +101899,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -102246,7 +102246,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -102593,7 +102593,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -102940,7 +102940,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -103269,7 +103269,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -103597,7 +103597,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -103980,7 +103980,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -104327,7 +104327,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -104674,7 +104674,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -105049,7 +105049,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -105424,7 +105424,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -105799,7 +105799,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -106174,7 +106174,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -106549,7 +106549,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -106924,7 +106924,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -107253,7 +107253,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -107591,7 +107591,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -107906,7 +107906,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -108302,7 +108302,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -108626,7 +108626,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -109211,7 +109211,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -109526,7 +109526,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -109865,7 +109865,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -110207,7 +110207,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -110531,7 +110531,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -110846,7 +110846,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -111296,7 +111296,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -111656,7 +111656,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -112016,7 +112016,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -112331,7 +112331,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -112646,7 +112646,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -112975,7 +112975,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -113385,7 +113385,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -113723,7 +113723,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -114322,7 +114322,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -114651,7 +114651,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -115004,7 +115004,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -115360,7 +115360,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -115698,7 +115698,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -116027,7 +116027,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -116491,7 +116491,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -116865,7 +116865,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -117239,7 +117239,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -117568,7 +117568,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -117897,7 +117897,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -118244,7 +118244,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -118591,7 +118591,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -118938,7 +118938,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -119266,7 +119266,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -119595,7 +119595,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -119942,7 +119942,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -120298,7 +120298,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -120654,7 +120654,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -121006,7 +121006,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -121353,7 +121353,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -121701,7 +121701,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -122024,7 +122024,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -122381,7 +122381,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -122728,7 +122728,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -123075,7 +123075,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -123423,7 +123423,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -123770,7 +123770,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -124117,7 +124117,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -124464,7 +124464,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -124812,7 +124812,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -125159,7 +125159,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -125560,7 +125560,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -125907,7 +125907,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -126236,7 +126236,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -126583,7 +126583,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -126930,7 +126930,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -127277,7 +127277,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -127624,7 +127624,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -127952,7 +127952,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -128344,7 +128344,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -128659,7 +128659,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -128988,7 +128988,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -129326,7 +129326,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -129655,7 +129655,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -129984,7 +129984,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -130280,7 +130280,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
@@ -130605,7 +130605,7 @@ class PdfApi
         }
         // add custom heades
         $headers['x-aspose-client'] = 'php sdk';
-        $headers['x-aspose-client-version'] = '26.4.0';
+        $headers['x-aspose-client-version'] = '26.5.0';
         
         //ASPOSE_PDF_CLOUD
 
