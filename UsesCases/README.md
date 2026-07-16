@@ -21,7 +21,7 @@
   ```bash
   php UsesCases/Compares/comparesLaunch.php
   ```
-- *[Compares/comparesHelper.php](Compares/comparesHelper.php)* – Provides helper functions for file upload, download, and path management in PDF comparison tasks.
+- *[Compares/comparePdfDocuments.php](Compares/comparePdfDocuments.php)* – Defines the PdfCompares class with a method that uploads two PDFs, invokes the postComparePdf cloud API to compare them, and downloads the output.
 
 #### CompressDocument
 - **[CompressDocument/compressPdf.php](CompressDocument/compressPdf.php)** – Uploads a PDF document, compresses it with specific optimization settings (images, fonts, streams), and downloads the smaller file.
