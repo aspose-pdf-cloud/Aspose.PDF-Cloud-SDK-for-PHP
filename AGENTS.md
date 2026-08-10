@@ -1,7 +1,7 @@
 # Aspose.PDF Cloud SDK for PHP — Agent Analysis
 
 > **Repository:** [aspose-pdf-cloud/aspose-pdf-cloud-php](https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php)  
-> **Version:** 26.4.0 | **Package:** `aspose/pdf-sdk-php`  
+> **Version:** 26.7.0 | **Package:** `aspose/pdf-sdk-php`  
 > **License:** MIT | **PHP Version:** 7.4+  
 > **API Version:** v3.0
 
