@@ -30,7 +30,7 @@ Method | HTTP request | Description
 [**deleteStamp**](PdfApi.md#deleteStamp) | **DELETE** /pdf/{name}/stamps/{stampId} | Delete document stamp by ID
 [**deleteTable**](PdfApi.md#deleteTable) | **DELETE** /pdf/{name}/tables/{tableId} | Delete document table by ID
 [**downloadFile**](PdfApi.md#downloadFile) | **GET** /pdf/storage/file/{path} | Download file
-[**getApsInStorageToPdf**](PdfApi.md#getApsInStorageToPdf) | **GET** /pdf/create/aps | Convert APS file (located on storage) to PDF format and return resulting file in response. 
+[**getApsInStorageToPdf**](PdfApi.md#getApsInStorageToPdf) | **GET** /pdf/create/aps | Convert APS file (located on storage) to PDF format and return resulting file in response.
 [**getBookmark**](PdfApi.md#getBookmark) | **GET** /pdf/{name}/bookmarks/bookmark/{bookmarkPath} | Read document bookmark.
 [**getBookmarks**](PdfApi.md#getBookmarks) | **GET** /pdf/{name}/bookmarks/list/{bookmarkPath} | Read document bookmarks node list.
 [**getCaretAnnotation**](PdfApi.md#getCaretAnnotation) | **GET** /pdf/{name}/annotations/caret/{annotationId} | Read document page caret annotation by ID.
@@ -77,7 +77,7 @@ Method | HTTP request | Description
 [**getDocumentTextBoxFields**](PdfApi.md#getDocumentTextBoxFields) | **GET** /pdf/{name}/fields/textbox | Read document text box fields.
 [**getDocumentUnderlineAnnotations**](PdfApi.md#getDocumentUnderlineAnnotations) | **GET** /pdf/{name}/annotations/underline | Read document underline annotations.
 [**getDownloadDocumentAttachmentByIndex**](PdfApi.md#getDownloadDocumentAttachmentByIndex) | **GET** /pdf/{name}/attachments/{attachmentIndex}/download | Download document attachment content by its index.
-[**getEpubInStorageToPdf**](PdfApi.md#getEpubInStorageToPdf) | **GET** /pdf/create/epub | Convert EPUB file (located on storage) to PDF format and return resulting file in response. 
+[**getEpubInStorageToPdf**](PdfApi.md#getEpubInStorageToPdf) | **GET** /pdf/create/epub | Convert EPUB file (located on storage) to PDF format and return resulting file in response.
 [**getExportFieldsFromPdfToFdfInStorage**](PdfApi.md#getExportFieldsFromPdfToFdfInStorage) | **GET** /pdf/{name}/export/fdf | Export fields from from PDF in storage to FDF file.
 [**getExportFieldsFromPdfToXfdfInStorage**](PdfApi.md#getExportFieldsFromPdfToXfdfInStorage) | **GET** /pdf/{name}/export/xfdf | Export fields from from PDF in storage to XFDF file.
 [**getExportFieldsFromPdfToXmlInStorage**](PdfApi.md#getExportFieldsFromPdfToXmlInStorage) | **GET** /pdf/{name}/export/xml | Export fields from from PDF in storage to XML file.
@@ -89,7 +89,7 @@ Method | HTTP request | Description
 [**getFileVersions**](PdfApi.md#getFileVersions) | **GET** /pdf/storage/version/{path} | Get file versions
 [**getFreeTextAnnotation**](PdfApi.md#getFreeTextAnnotation) | **GET** /pdf/{name}/annotations/freetext/{annotationId} | Read document page free text annotation by ID.
 [**getHighlightAnnotation**](PdfApi.md#getHighlightAnnotation) | **GET** /pdf/{name}/annotations/highlight/{annotationId} | Read document page highlight annotation by ID.
-[**getHtmlInStorageToPdf**](PdfApi.md#getHtmlInStorageToPdf) | **GET** /pdf/create/html | Convert HTML file (located on storage) to PDF format and return resulting file in response. 
+[**getHtmlInStorageToPdf**](PdfApi.md#getHtmlInStorageToPdf) | **GET** /pdf/create/html | Convert HTML file (located on storage) to PDF format and return resulting file in response.
 [**getImage**](PdfApi.md#getImage) | **GET** /pdf/{name}/images/{imageId} | Read document image by ID.
 [**getImageExtractAsGif**](PdfApi.md#getImageExtractAsGif) | **GET** /pdf/{name}/images/{imageId}/extract/gif | Extract document image in GIF format
 [**getImageExtractAsJpeg**](PdfApi.md#getImageExtractAsJpeg) | **GET** /pdf/{name}/images/{imageId}/extract/jpeg | Extract document image in JPEG format
@@ -99,13 +99,13 @@ Method | HTTP request | Description
 [**getImagesExtractSvg**](PdfApi.md#getImagesExtractSvg) | **GET** /pdf/{name}/pages/{pageNumber}/images/extract/svg | Extract SVG images from document page.
 [**getImportFieldsFromFdfInStorage**](PdfApi.md#getImportFieldsFromFdfInStorage) | **GET** /pdf/{name}/import/fdf | Update fields from FDF file in storage.
 [**getImportFieldsFromXfdfInStorage**](PdfApi.md#getImportFieldsFromXfdfInStorage) | **GET** /pdf/{name}/import/xfdf | Update fields from XFDF file in storage.
-[**getImportFieldsFromXmlInStorage**](PdfApi.md#getImportFieldsFromXmlInStorage) | **GET** /pdf/{name}/import/xml | Import from XML file (located on storage) to PDF format and return resulting file in response. 
+[**getImportFieldsFromXmlInStorage**](PdfApi.md#getImportFieldsFromXmlInStorage) | **GET** /pdf/{name}/import/xml | Import from XML file (located on storage) to PDF format and return resulting file in response.
 [**getInkAnnotation**](PdfApi.md#getInkAnnotation) | **GET** /pdf/{name}/annotations/ink/{annotationId} | Read document page ink annotation by ID.
 [**getLineAnnotation**](PdfApi.md#getLineAnnotation) | **GET** /pdf/{name}/annotations/line/{annotationId} | Read document page line annotation by ID.
 [**getLinkAnnotation**](PdfApi.md#getLinkAnnotation) | **GET** /pdf/{name}/links/{linkId} | Read document link annotation by ID.
 [**getListBoxField**](PdfApi.md#getListBoxField) | **GET** /pdf/{name}/fields/listbox/{fieldName} | Read document listbox field by name.
-[**getMarkdownInStorageToPdf**](PdfApi.md#getMarkdownInStorageToPdf) | **GET** /pdf/create/markdown | Convert MD file (located on storage) to PDF format and return resulting file in response. 
-[**getMhtInStorageToPdf**](PdfApi.md#getMhtInStorageToPdf) | **GET** /pdf/create/mht | Convert MHT file (located on storage) to PDF format and return resulting file in response. 
+[**getMarkdownInStorageToPdf**](PdfApi.md#getMarkdownInStorageToPdf) | **GET** /pdf/create/markdown | Convert MD file (located on storage) to PDF format and return resulting file in response.
+[**getMhtInStorageToPdf**](PdfApi.md#getMhtInStorageToPdf) | **GET** /pdf/create/mht | Convert MHT file (located on storage) to PDF format and return resulting file in response.
 [**getMovieAnnotation**](PdfApi.md#getMovieAnnotation) | **GET** /pdf/{name}/annotations/movie/{annotationId} | Read document page movie annotation by ID.
 [**getPage**](PdfApi.md#getPage) | **GET** /pdf/{name}/pages/{pageNumber} | Read document page info.
 [**getPageAnnotations**](PdfApi.md#getPageAnnotations) | **GET** /pdf/{name}/pages/{pageNumber}/annotations | Read document page annotations. Returns only FreeTextAnnotations, TextAnnotations, other annotations will implemented next releases.
@@ -147,8 +147,8 @@ Method | HTTP request | Description
 [**getPageTextAnnotations**](PdfApi.md#getPageTextAnnotations) | **GET** /pdf/{name}/pages/{pageNumber}/annotations/text | Read document page text annotations.
 [**getPageTextBoxFields**](PdfApi.md#getPageTextBoxFields) | **GET** /pdf/{name}/page/{pageNumber}/fields/textbox | Read document page text box fields.
 [**getPageUnderlineAnnotations**](PdfApi.md#getPageUnderlineAnnotations) | **GET** /pdf/{name}/pages/{pageNumber}/annotations/underline | Read document page underline annotations.
-[**getPclInStorageToPdf**](PdfApi.md#getPclInStorageToPdf) | **GET** /pdf/create/pcl | Convert PCL file (located on storage) to PDF format and return resulting file in response. 
-[**getPdfAInStorageToPdf**](PdfApi.md#getPdfAInStorageToPdf) | **GET** /pdf/create/pdfa | Convert PDFA file (located on storage) to PDF format and return resulting file in response. 
+[**getPclInStorageToPdf**](PdfApi.md#getPclInStorageToPdf) | **GET** /pdf/create/pcl | Convert PCL file (located on storage) to PDF format and return resulting file in response.
+[**getPdfAInStorageToPdf**](PdfApi.md#getPdfAInStorageToPdf) | **GET** /pdf/create/pdfa | Convert PDFA file (located on storage) to PDF format and return resulting file in response.
 [**getPdfInStorageToAps**](PdfApi.md#getPdfInStorageToAps) | **GET** /pdf/{name}/convert/aps | Converts PDF document (located on storage) to APS format and returns resulting file in response content
 [**getPdfInStorageToDoc**](PdfApi.md#getPdfInStorageToDoc) | **GET** /pdf/{name}/convert/doc | Converts PDF document (located on storage) to DOC format and returns resulting file in response content.
 [**getPdfInStorageToEpub**](PdfApi.md#getPdfInStorageToEpub) | **GET** /pdf/{name}/convert/epub | Converts PDF document (located on storage) to EPUB format and returns resulting file in response content
@@ -167,7 +167,7 @@ Method | HTTP request | Description
 [**getPolygonAnnotation**](PdfApi.md#getPolygonAnnotation) | **GET** /pdf/{name}/annotations/polygon/{annotationId} | Read document page polygon annotation by ID.
 [**getPolyLineAnnotation**](PdfApi.md#getPolyLineAnnotation) | **GET** /pdf/{name}/annotations/polyline/{annotationId} | Read document page polyline annotation by ID.
 [**getPopupAnnotation**](PdfApi.md#getPopupAnnotation) | **GET** /pdf/{name}/annotations/popup/{annotationId} | Read document page popup annotation by ID.
-[**getPsInStorageToPdf**](PdfApi.md#getPsInStorageToPdf) | **GET** /pdf/create/ps | Convert PS file (located on storage) to PDF format and return resulting file in response. 
+[**getPsInStorageToPdf**](PdfApi.md#getPsInStorageToPdf) | **GET** /pdf/create/ps | Convert PS file (located on storage) to PDF format and return resulting file in response.
 [**getRadioButtonField**](PdfApi.md#getRadioButtonField) | **GET** /pdf/{name}/fields/radiobutton/{fieldName} | Read document RadioButton field by name.
 [**getRedactionAnnotation**](PdfApi.md#getRedactionAnnotation) | **GET** /pdf/{name}/annotations/redaction/{annotationId} | Read document page redaction annotation by ID.
 [**getScreenAnnotation**](PdfApi.md#getScreenAnnotation) | **GET** /pdf/{name}/annotations/screen/{annotationId} | Read document page screen annotation by ID.
@@ -180,22 +180,22 @@ Method | HTTP request | Description
 [**getStampAnnotation**](PdfApi.md#getStampAnnotation) | **GET** /pdf/{name}/annotations/stamp/{annotationId} | Read document page stamp annotation by ID.
 [**getStampAnnotationData**](PdfApi.md#getStampAnnotationData) | **GET** /pdf/{name}/annotations/stamp/{annotationId}/data | Read document page stamp annotation by ID.
 [**getStrikeOutAnnotation**](PdfApi.md#getStrikeOutAnnotation) | **GET** /pdf/{name}/annotations/strikeout/{annotationId} | Read document page StrikeOut annotation by ID.
-[**getSvgInStorageToPdf**](PdfApi.md#getSvgInStorageToPdf) | **GET** /pdf/create/svg | Convert SVG file (located on storage) to PDF format and return resulting file in response. 
+[**getSvgInStorageToPdf**](PdfApi.md#getSvgInStorageToPdf) | **GET** /pdf/create/svg | Convert SVG file (located on storage) to PDF format and return resulting file in response.
 [**getTable**](PdfApi.md#getTable) | **GET** /pdf/{name}/tables/{tableId} | Read document page table by ID.
-[**getTeXInStorageToPdf**](PdfApi.md#getTeXInStorageToPdf) | **GET** /pdf/create/tex | Convert TeX file (located on storage) to PDF format and return resulting file in response. 
+[**getTeXInStorageToPdf**](PdfApi.md#getTeXInStorageToPdf) | **GET** /pdf/create/tex | Convert TeX file (located on storage) to PDF format and return resulting file in response.
 [**getText**](PdfApi.md#getText) | **GET** /pdf/{name}/text | Read document text.
 [**getTextAnnotation**](PdfApi.md#getTextAnnotation) | **GET** /pdf/{name}/annotations/text/{annotationId} | Read document page text annotation by ID.
 [**getTextBoxField**](PdfApi.md#getTextBoxField) | **GET** /pdf/{name}/fields/textbox/{fieldName} | Read document text box field by name.
 [**getUnderlineAnnotation**](PdfApi.md#getUnderlineAnnotation) | **GET** /pdf/{name}/annotations/underline/{annotationId} | Read document page underline annotation by ID.
 [**getVerifySignature**](PdfApi.md#getVerifySignature) | **GET** /pdf/{name}/verifySignature | Verify signature document.
-[**getWebInStorageToPdf**](PdfApi.md#getWebInStorageToPdf) | **GET** /pdf/create/web | Convert web page to PDF format and return resulting file in response. 
+[**getWebInStorageToPdf**](PdfApi.md#getWebInStorageToPdf) | **GET** /pdf/create/web | Convert web page to PDF format and return resulting file in response.
 [**getWordsPerPage**](PdfApi.md#getWordsPerPage) | **GET** /pdf/{name}/pages/wordCount | Get number of words per document page.
 [**getXfaPdfInStorageToAcroForm**](PdfApi.md#getXfaPdfInStorageToAcroForm) | **GET** /pdf/{name}/convert/xfatoacroform | Converts PDF document which contains XFA form (located on storage) to PDF with AcroForm and returns resulting file response content
-[**getXmlInStorageToPdf**](PdfApi.md#getXmlInStorageToPdf) | **GET** /pdf/create/xml | Convert XML file (located on storage) to PDF format and return resulting file in response. 
+[**getXmlInStorageToPdf**](PdfApi.md#getXmlInStorageToPdf) | **GET** /pdf/create/xml | Convert XML file (located on storage) to PDF format and return resulting file in response.
 [**getXmpMetadataJson**](PdfApi.md#getXmpMetadataJson) | **GET** /pdf/{name}/xmpmetadata/json | Gets document XMP Metadata as JSON.
 [**getXmpMetadataXml**](PdfApi.md#getXmpMetadataXml) | **GET** /pdf/{name}/xmpmetadata/xml | Gets document XMP Metadata as XML file.
-[**getXpsInStorageToPdf**](PdfApi.md#getXpsInStorageToPdf) | **GET** /pdf/create/xps | Convert XPS file (located on storage) to PDF format and return resulting file in response. 
-[**getXslFoInStorageToPdf**](PdfApi.md#getXslFoInStorageToPdf) | **GET** /pdf/create/xslfo | Convert XslFo file (located on storage) to PDF format and return resulting file in response. 
+[**getXpsInStorageToPdf**](PdfApi.md#getXpsInStorageToPdf) | **GET** /pdf/create/xps | Convert XPS file (located on storage) to PDF format and return resulting file in response.
+[**getXslFoInStorageToPdf**](PdfApi.md#getXslFoInStorageToPdf) | **GET** /pdf/create/xslfo | Convert XslFo file (located on storage) to PDF format and return resulting file in response.
 [**moveFile**](PdfApi.md#moveFile) | **PUT** /pdf/storage/file/move/{srcPath} | Move file
 [**moveFolder**](PdfApi.md#moveFolder) | **PUT** /pdf/storage/folder/move/{srcPath} | Move folder
 [**objectExists**](PdfApi.md#objectExists) | **GET** /pdf/storage/exist/{path} | Check if file or folder exists
@@ -224,7 +224,7 @@ Method | HTTP request | Description
 [**postDocumentTextStampsPageSpecified**](PdfApi.md#postDocumentTextStampsPageSpecified) | **POST** /pdf/{name}/stamps/text/pagespecified | Add document text stamps to specified pages.
 [**postEncryptDocumentInStorage**](PdfApi.md#postEncryptDocumentInStorage) | **POST** /pdf/{name}/encrypt | Encrypt document in storage.
 [**postFlattenDocument**](PdfApi.md#postFlattenDocument) | **POST** /pdf/{name}/flatten | Flatten the document.
-[**postHtmlToPdf**](PdfApi.md#postHtmlToPdf) | **POST** /pdf/create/html | Convert HTML file (zip archive in request content) to PDF format and return resulting file in response. 
+[**postHtmlToPdf**](PdfApi.md#postHtmlToPdf) | **POST** /pdf/create/html | Convert HTML file (zip archive in request content) to PDF format and return resulting file in response.
 [**postImportFieldsFromFdf**](PdfApi.md#postImportFieldsFromFdf) | **POST** /pdf/{name}/import/fdf | Update fields from FDF file in request.
 [**postImportFieldsFromXfdf**](PdfApi.md#postImportFieldsFromXfdf) | **POST** /pdf/{name}/import/xfdf | Update fields from XFDF file in request.
 [**postImportFieldsFromXml**](PdfApi.md#postImportFieldsFromXml) | **POST** /pdf/{name}/import/xml | Update fields from XML file in request.
@@ -273,7 +273,7 @@ Method | HTTP request | Description
 [**putAddNewPage**](PdfApi.md#putAddNewPage) | **PUT** /pdf/{name}/pages | Add new page to end of the document.
 [**putAddText**](PdfApi.md#putAddText) | **PUT** /pdf/{name}/pages/{pageNumber}/text | Add text to PDF document page.
 [**putAnnotationsFlatten**](PdfApi.md#putAnnotationsFlatten) | **PUT** /pdf/{name}/annotations/flatten | Flattens the annotations of the specified types
-[**putApsInStorageToPdf**](PdfApi.md#putApsInStorageToPdf) | **PUT** /pdf/{name}/create/aps | Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
+[**putApsInStorageToPdf**](PdfApi.md#putApsInStorageToPdf) | **PUT** /pdf/{name}/create/aps | Convert APS file (located on storage) to PDF format and upload resulting file to storage.
 [**putBookmark**](PdfApi.md#putBookmark) | **PUT** /pdf/{name}/bookmarks/bookmark/{bookmarkPath} | Update document bookmark.
 [**putCaretAnnotation**](PdfApi.md#putCaretAnnotation) | **PUT** /pdf/{name}/annotations/caret/{annotationId} | Replace document caret annotation
 [**putChangePasswordDocument**](PdfApi.md#putChangePasswordDocument) | **PUT** /pdf/changepassword | Change document password from content.
@@ -285,7 +285,7 @@ Method | HTTP request | Description
 [**putDecryptDocument**](PdfApi.md#putDecryptDocument) | **PUT** /pdf/decrypt | Decrypt document from content.
 [**putDocumentDisplayProperties**](PdfApi.md#putDocumentDisplayProperties) | **PUT** /pdf/{name}/displayproperties | Update document display properties.
 [**putEncryptDocument**](PdfApi.md#putEncryptDocument) | **PUT** /pdf/encrypt | Encrypt document from content.
-[**putEpubInStorageToPdf**](PdfApi.md#putEpubInStorageToPdf) | **PUT** /pdf/{name}/create/epub | Convert EPUB file (located on storage) to PDF format and upload resulting file to storage. 
+[**putEpubInStorageToPdf**](PdfApi.md#putEpubInStorageToPdf) | **PUT** /pdf/{name}/create/epub | Convert EPUB file (located on storage) to PDF format and upload resulting file to storage.
 [**putExportFieldsFromPdfToFdfInStorage**](PdfApi.md#putExportFieldsFromPdfToFdfInStorage) | **PUT** /pdf/{name}/export/fdf | Export fields from from PDF in storage to FDF file in storage.
 [**putExportFieldsFromPdfToXfdfInStorage**](PdfApi.md#putExportFieldsFromPdfToXfdfInStorage) | **PUT** /pdf/{name}/export/xfdf | Export fields from from PDF in storage to XFDF file in storage.
 [**putExportFieldsFromPdfToXmlInStorage**](PdfApi.md#putExportFieldsFromPdfToXmlInStorage) | **PUT** /pdf/{name}/export/xml | Export fields from from PDF in storage to XML file in storage.
@@ -294,12 +294,12 @@ Method | HTTP request | Description
 [**putFileAttachmentAnnotationDataExtract**](PdfApi.md#putFileAttachmentAnnotationDataExtract) | **PUT** /pdf/{name}/annotations/fileattachment/{annotationId}/data/extract | Extract document FileAttachment annotation content to storage
 [**putFreeTextAnnotation**](PdfApi.md#putFreeTextAnnotation) | **PUT** /pdf/{name}/annotations/freetext/{annotationId} | Replace document free text annotation
 [**putHighlightAnnotation**](PdfApi.md#putHighlightAnnotation) | **PUT** /pdf/{name}/annotations/highlight/{annotationId} | Replace document highlight annotation
-[**putHtmlInStorageToPdf**](PdfApi.md#putHtmlInStorageToPdf) | **PUT** /pdf/{name}/create/html | Convert HTML file (located on storage) to PDF format and upload resulting file to storage. 
+[**putHtmlInStorageToPdf**](PdfApi.md#putHtmlInStorageToPdf) | **PUT** /pdf/{name}/create/html | Convert HTML file (located on storage) to PDF format and upload resulting file to storage.
 [**putImageExtractAsGif**](PdfApi.md#putImageExtractAsGif) | **PUT** /pdf/{name}/images/{imageId}/extract/gif | Extract document image in GIF format to folder
 [**putImageExtractAsJpeg**](PdfApi.md#putImageExtractAsJpeg) | **PUT** /pdf/{name}/images/{imageId}/extract/jpeg | Extract document image in JPEG format to folder
 [**putImageExtractAsPng**](PdfApi.md#putImageExtractAsPng) | **PUT** /pdf/{name}/images/{imageId}/extract/png | Extract document image in PNG format to folder
 [**putImageExtractAsTiff**](PdfApi.md#putImageExtractAsTiff) | **PUT** /pdf/{name}/images/{imageId}/extract/tiff | Extract document image in TIFF format to folder
-[**putImageInStorageToPdf**](PdfApi.md#putImageInStorageToPdf) | **PUT** /pdf/{name}/create/images | Convert image file (located on storage) to PDF format and upload resulting file to storage. 
+[**putImageInStorageToPdf**](PdfApi.md#putImageInStorageToPdf) | **PUT** /pdf/{name}/create/images | Convert image file (located on storage) to PDF format and upload resulting file to storage.
 [**putImagesExtractAsGif**](PdfApi.md#putImagesExtractAsGif) | **PUT** /pdf/{name}/pages/{pageNumber}/images/extract/gif | Extract document images in GIF format to folder.
 [**putImagesExtractAsJpeg**](PdfApi.md#putImagesExtractAsJpeg) | **PUT** /pdf/{name}/pages/{pageNumber}/images/extract/jpeg | Extract document images in JPEG format to folder.
 [**putImagesExtractAsPng**](PdfApi.md#putImagesExtractAsPng) | **PUT** /pdf/{name}/pages/{pageNumber}/images/extract/png | Extract document images in PNG format to folder.
@@ -311,9 +311,9 @@ Method | HTTP request | Description
 [**putLineAnnotation**](PdfApi.md#putLineAnnotation) | **PUT** /pdf/{name}/annotations/line/{annotationId} | Replace document line annotation
 [**putLinkAnnotation**](PdfApi.md#putLinkAnnotation) | **PUT** /pdf/{name}/links/{linkId} | Replace document page link annotations
 [**putListBoxField**](PdfApi.md#putListBoxField) | **PUT** /pdf/{name}/fields/listbox/{fieldName} | Replace document listbox field
-[**putMarkdownInStorageToPdf**](PdfApi.md#putMarkdownInStorageToPdf) | **PUT** /pdf/{name}/create/markdown | Convert MD file (located on storage) to PDF format and upload resulting file to storage. 
+[**putMarkdownInStorageToPdf**](PdfApi.md#putMarkdownInStorageToPdf) | **PUT** /pdf/{name}/create/markdown | Convert MD file (located on storage) to PDF format and upload resulting file to storage.
 [**putMergeDocuments**](PdfApi.md#putMergeDocuments) | **PUT** /pdf/{name}/merge | Merge a list of documents.
-[**putMhtInStorageToPdf**](PdfApi.md#putMhtInStorageToPdf) | **PUT** /pdf/{name}/create/mht | Convert MHT file (located on storage) to PDF format and upload resulting file to storage. 
+[**putMhtInStorageToPdf**](PdfApi.md#putMhtInStorageToPdf) | **PUT** /pdf/{name}/create/mht | Convert MHT file (located on storage) to PDF format and upload resulting file to storage.
 [**putMovieAnnotation**](PdfApi.md#putMovieAnnotation) | **PUT** /pdf/{name}/annotations/movie/{annotationId} | Replace document movie annotation
 [**putPageAddStamp**](PdfApi.md#putPageAddStamp) | **PUT** /pdf/{name}/pages/{pageNumber}/stamp | Add page stamp.
 [**putPageConvertToBmp**](PdfApi.md#putPageConvertToBmp) | **PUT** /pdf/{name}/pages/{pageNumber}/convert/bmp | Convert document page to bmp image and upload resulting file to storage.
@@ -322,8 +322,8 @@ Method | HTTP request | Description
 [**putPageConvertToJpeg**](PdfApi.md#putPageConvertToJpeg) | **PUT** /pdf/{name}/pages/{pageNumber}/convert/jpeg | Convert document page to Jpeg image and upload resulting file to storage.
 [**putPageConvertToPng**](PdfApi.md#putPageConvertToPng) | **PUT** /pdf/{name}/pages/{pageNumber}/convert/png | Convert document page to png image and upload resulting file to storage.
 [**putPageConvertToTiff**](PdfApi.md#putPageConvertToTiff) | **PUT** /pdf/{name}/pages/{pageNumber}/convert/tiff | Convert document page to Tiff image and upload resulting file to storage.
-[**putPclInStorageToPdf**](PdfApi.md#putPclInStorageToPdf) | **PUT** /pdf/{name}/create/pcl | Convert PCL file (located on storage) to PDF format and upload resulting file to storage. 
-[**putPdfAInStorageToPdf**](PdfApi.md#putPdfAInStorageToPdf) | **PUT** /pdf/{name}/create/pdfa | Convert PDFA file (located on storage) to PDF format and upload resulting file to storage. 
+[**putPclInStorageToPdf**](PdfApi.md#putPclInStorageToPdf) | **PUT** /pdf/{name}/create/pcl | Convert PCL file (located on storage) to PDF format and upload resulting file to storage.
+[**putPdfAInStorageToPdf**](PdfApi.md#putPdfAInStorageToPdf) | **PUT** /pdf/{name}/create/pdfa | Convert PDFA file (located on storage) to PDF format and upload resulting file to storage.
 [**putPdfInRequestToAps**](PdfApi.md#putPdfInRequestToAps) | **PUT** /pdf/convert/aps | Converts PDF document (in request content) to APS format and uploads resulting file to storage.
 [**putPdfInRequestToDoc**](PdfApi.md#putPdfInRequestToDoc) | **PUT** /pdf/convert/doc | Converts PDF document (in request content) to DOC format and uploads resulting file to storage.
 [**putPdfInRequestToEpub**](PdfApi.md#putPdfInRequestToEpub) | **PUT** /pdf/convert/epub | Converts PDF document (in request content) to EPUB format and uploads resulting file to storage.
@@ -356,7 +356,7 @@ Method | HTTP request | Description
 [**putPolyLineAnnotation**](PdfApi.md#putPolyLineAnnotation) | **PUT** /pdf/{name}/annotations/polyline/{annotationId} | Replace document polyline annotation
 [**putPopupAnnotation**](PdfApi.md#putPopupAnnotation) | **PUT** /pdf/{name}/annotations/popup/{annotationId} | Replace document popup annotation
 [**putPrivileges**](PdfApi.md#putPrivileges) | **PUT** /pdf/{name}/privileges | Update privilege document.
-[**putPsInStorageToPdf**](PdfApi.md#putPsInStorageToPdf) | **PUT** /pdf/{name}/create/ps | Convert PS file (located on storage) to PDF format and upload resulting file to storage. 
+[**putPsInStorageToPdf**](PdfApi.md#putPsInStorageToPdf) | **PUT** /pdf/{name}/create/ps | Convert PS file (located on storage) to PDF format and upload resulting file to storage.
 [**putRadioButtonField**](PdfApi.md#putRadioButtonField) | **PUT** /pdf/{name}/fields/radiobutton/{fieldName} | Replace document RadioButton field
 [**putRedactionAnnotation**](PdfApi.md#putRedactionAnnotation) | **PUT** /pdf/{name}/annotations/redaction/{annotationId} | Replace document redaction annotation
 [**putReplaceImage**](PdfApi.md#putReplaceImage) | **PUT** /pdf/{name}/images/{imageId} | Replace document image.
@@ -373,20 +373,20 @@ Method | HTTP request | Description
 [**putStampAnnotation**](PdfApi.md#putStampAnnotation) | **PUT** /pdf/{name}/annotations/stamp/{annotationId} | Replace document stamp annotation
 [**putStampAnnotationDataExtract**](PdfApi.md#putStampAnnotationDataExtract) | **PUT** /pdf/{name}/annotations/stamp/{annotationId}/data/extract | Extract document stamp annotation content to storage
 [**putStrikeOutAnnotation**](PdfApi.md#putStrikeOutAnnotation) | **PUT** /pdf/{name}/annotations/strikeout/{annotationId} | Replace document StrikeOut annotation
-[**putSvgInStorageToPdf**](PdfApi.md#putSvgInStorageToPdf) | **PUT** /pdf/{name}/create/svg | Convert SVG file (located on storage) to PDF format and upload resulting file to storage. 
+[**putSvgInStorageToPdf**](PdfApi.md#putSvgInStorageToPdf) | **PUT** /pdf/{name}/create/svg | Convert SVG file (located on storage) to PDF format and upload resulting file to storage.
 [**putTable**](PdfApi.md#putTable) | **PUT** /pdf/{name}/tables/{tableId} | Replace document page table.
-[**putTeXInStorageToPdf**](PdfApi.md#putTeXInStorageToPdf) | **PUT** /pdf/{name}/create/tex | Convert TeX file (located on storage) to PDF format and upload resulting file to storage. 
+[**putTeXInStorageToPdf**](PdfApi.md#putTeXInStorageToPdf) | **PUT** /pdf/{name}/create/tex | Convert TeX file (located on storage) to PDF format and upload resulting file to storage.
 [**putTextAnnotation**](PdfApi.md#putTextAnnotation) | **PUT** /pdf/{name}/annotations/text/{annotationId} | Replace document text annotation
 [**putTextBoxField**](PdfApi.md#putTextBoxField) | **PUT** /pdf/{name}/fields/textbox/{fieldName} | Replace document text box field
 [**putUnderlineAnnotation**](PdfApi.md#putUnderlineAnnotation) | **PUT** /pdf/{name}/annotations/underline/{annotationId} | Replace document underline annotation
 [**putUpdateField**](PdfApi.md#putUpdateField) | **PUT** /pdf/{name}/fields/{fieldName} | Update field.
 [**putUpdateFields**](PdfApi.md#putUpdateFields) | **PUT** /pdf/{name}/fields | Update fields.
-[**putWebInStorageToPdf**](PdfApi.md#putWebInStorageToPdf) | **PUT** /pdf/{name}/create/web | Convert web page to PDF format and upload resulting file to storage. 
+[**putWebInStorageToPdf**](PdfApi.md#putWebInStorageToPdf) | **PUT** /pdf/{name}/create/web | Convert web page to PDF format and upload resulting file to storage.
 [**putXfaPdfInRequestToAcroForm**](PdfApi.md#putXfaPdfInRequestToAcroForm) | **PUT** /pdf/convert/xfatoacroform | Converts PDF document which contains XFA form (in request content) to PDF with AcroForm and uploads resulting file to storage.
 [**putXfaPdfInStorageToAcroForm**](PdfApi.md#putXfaPdfInStorageToAcroForm) | **PUT** /pdf/{name}/convert/xfatoacroform | Converts PDF document which contains XFA form (located on storage) to PDF with AcroForm and uploads resulting file to storage
-[**putXmlInStorageToPdf**](PdfApi.md#putXmlInStorageToPdf) | **PUT** /pdf/{name}/create/xml | Convert XML file (located on storage) to PDF format and upload resulting file to storage. 
-[**putXpsInStorageToPdf**](PdfApi.md#putXpsInStorageToPdf) | **PUT** /pdf/{name}/create/xps | Convert XPS file (located on storage) to PDF format and upload resulting file to storage. 
-[**putXslFoInStorageToPdf**](PdfApi.md#putXslFoInStorageToPdf) | **PUT** /pdf/{name}/create/xslfo | Convert XslFo file (located on storage) to PDF format and upload resulting file to storage. 
+[**putXmlInStorageToPdf**](PdfApi.md#putXmlInStorageToPdf) | **PUT** /pdf/{name}/create/xml | Convert XML file (located on storage) to PDF format and upload resulting file to storage.
+[**putXpsInStorageToPdf**](PdfApi.md#putXpsInStorageToPdf) | **PUT** /pdf/{name}/create/xps | Convert XPS file (located on storage) to PDF format and upload resulting file to storage.
+[**putXslFoInStorageToPdf**](PdfApi.md#putXslFoInStorageToPdf) | **PUT** /pdf/{name}/create/xslfo | Convert XslFo file (located on storage) to PDF format and upload resulting file to storage.
 [**storageExists**](PdfApi.md#storageExists) | **GET** /pdf/storage/{storageName}/exist | Check if storage exists
 [**uploadFile**](PdfApi.md#uploadFile) | **PUT** /pdf/storage/file/{path} | Upload file
 
@@ -991,7 +991,7 @@ Name | Type | Description  | Notes
 ## **getApsInStorageToPdf**
 > \SplFileObject getApsInStorageToPdf($src_path, $storage)
 
-Convert APS file (located on storage) to PDF format and return resulting file in response. 
+Convert APS file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -2039,7 +2039,7 @@ Name | Type | Description  | Notes
 ## **getEpubInStorageToPdf**
 > \SplFileObject getEpubInStorageToPdf($src_path, $storage)
 
-Convert EPUB file (located on storage) to PDF format and return resulting file in response. 
+Convert EPUB file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -2305,7 +2305,7 @@ Name | Type | Description  | Notes
 ## **getHtmlInStorageToPdf**
 > \SplFileObject getHtmlInStorageToPdf($src_path, $html_file_name, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $storage)
 
-Convert HTML file (located on storage) to PDF format and return resulting file in response. 
+Convert HTML file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -2550,7 +2550,7 @@ Name | Type | Description  | Notes
 ## **getImportFieldsFromXmlInStorage**
 > \SplFileObject getImportFieldsFromXmlInStorage($name, $xml_file_path, $storage, $folder)
 
-Import from XML file (located on storage) to PDF format and return resulting file in response. 
+Import from XML file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -2665,7 +2665,7 @@ Name | Type | Description  | Notes
 ## **getMarkdownInStorageToPdf**
 > \SplFileObject getMarkdownInStorageToPdf($src_path, $storage)
 
-Convert MD file (located on storage) to PDF format and return resulting file in response. 
+Convert MD file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -2686,7 +2686,7 @@ Name | Type | Description  | Notes
 ## **getMhtInStorageToPdf**
 > \SplFileObject getMhtInStorageToPdf($src_path, $height, $width, $margin_left, $margin_bottom, $margin_right, $margin_top, $storage)
 
-Convert MHT file (located on storage) to PDF format and return resulting file in response. 
+Convert MHT file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -3682,7 +3682,7 @@ Name | Type | Description  | Notes
 ## **getPclInStorageToPdf**
 > \SplFileObject getPclInStorageToPdf($src_path, $storage)
 
-Convert PCL file (located on storage) to PDF format and return resulting file in response. 
+Convert PCL file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -3703,7 +3703,7 @@ Name | Type | Description  | Notes
 ## **getPdfAInStorageToPdf**
 > \SplFileObject getPdfAInStorageToPdf($src_path, $dont_optimize, $storage)
 
-Convert PDFA file (located on storage) to PDF format and return resulting file in response. 
+Convert PDFA file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4195,7 +4195,7 @@ Name | Type | Description  | Notes
 ## **getPsInStorageToPdf**
 > \SplFileObject getPsInStorageToPdf($src_path, $storage)
 
-Convert PS file (located on storage) to PDF format and return resulting file in response. 
+Convert PS file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4492,7 +4492,7 @@ Name | Type | Description  | Notes
 ## **getSvgInStorageToPdf**
 > \SplFileObject getSvgInStorageToPdf($src_path, $adjust_page_size, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $storage)
 
-Convert SVG file (located on storage) to PDF format and return resulting file in response. 
+Convert SVG file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4544,7 +4544,7 @@ Name | Type | Description  | Notes
 ## **getTeXInStorageToPdf**
 > \SplFileObject getTeXInStorageToPdf($src_path, $storage)
 
-Convert TeX file (located on storage) to PDF format and return resulting file in response. 
+Convert TeX file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4686,7 +4686,7 @@ Name | Type | Description  | Notes
 ## **getWebInStorageToPdf**
 > \SplFileObject getWebInStorageToPdf($url, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $storage)
 
-Convert web page to PDF format and return resulting file in response. 
+Convert web page to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4758,7 +4758,7 @@ Name | Type | Description  | Notes
 ## **getXmlInStorageToPdf**
 > \SplFileObject getXmlInStorageToPdf($src_path, $xsl_file_path, $storage)
 
-Convert XML file (located on storage) to PDF format and return resulting file in response. 
+Convert XML file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4826,7 +4826,7 @@ Name | Type | Description  | Notes
 ## **getXpsInStorageToPdf**
 > \SplFileObject getXpsInStorageToPdf($src_path, $storage)
 
-Convert XPS file (located on storage) to PDF format and return resulting file in response. 
+Convert XPS file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -4847,7 +4847,7 @@ Name | Type | Description  | Notes
 ## **getXslFoInStorageToPdf**
 > \SplFileObject getXslFoInStorageToPdf($src_path, $storage)
 
-Convert XslFo file (located on storage) to PDF format and return resulting file in response. 
+Convert XslFo file (located on storage) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -5547,7 +5547,7 @@ Name | Type | Description  | Notes
 ## **postHtmlToPdf**
 > \SplFileObject postHtmlToPdf($html_file_name, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top)
 
-Convert HTML file (zip archive in request content) to PDF format and return resulting file in response. 
+Convert HTML file (zip archive in request content) to PDF format and return resulting file in response.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -6590,7 +6590,7 @@ Split document into ranges.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$name** | **string** | The document name. | 
-**$options** | [**\Aspose\PDF\Model\SplitRangePdfOptions**](SplitRangePdfOptions.md) | The splitting options. | 
+**$options** | [**\Aspose\PDF\Model\SplitRangePdfOptions**](SplitRangePdfOptions.md) | The splitting options. | [optional]
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
 **$password** | **string** | Base64 encoded password. | [optional]
@@ -6726,7 +6726,7 @@ Name | Type | Description  | Notes
 ## **putApsInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putApsInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert APS file (located on storage) to PDF format and upload resulting file to storage. 
+Convert APS file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7016,7 +7016,7 @@ Name | Type | Description  | Notes
 ## **putEpubInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putEpubInStorageToPdf($name, $src_path, $storage, $dst_folder)
 
-Convert EPUB file (located on storage) to PDF format and upload resulting file to storage. 
+Convert EPUB file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7226,7 +7226,7 @@ Name | Type | Description  | Notes
 ## **putHtmlInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putHtmlInStorageToPdf($name, $src_path, $html_file_name, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $dst_folder, $storage)
 
-Convert HTML file (located on storage) to PDF format and upload resulting file to storage. 
+Convert HTML file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7361,7 +7361,7 @@ Name | Type | Description  | Notes
 ## **putImageInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putImageInStorageToPdf($name, $image_templates, $dst_folder, $storage)
 
-Convert image file (located on storage) to PDF format and upload resulting file to storage. 
+Convert image file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7653,7 +7653,7 @@ Name | Type | Description  | Notes
 ## **putMarkdownInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putMarkdownInStorageToPdf($name, $src_path, $storage, $dst_folder)
 
-Convert MD file (located on storage) to PDF format and upload resulting file to storage. 
+Convert MD file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7699,7 +7699,7 @@ Name | Type | Description  | Notes
 ## **putMhtInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putMhtInStorageToPdf($name, $src_path, $height, $width, $margin_left, $margin_bottom, $margin_right, $margin_top, $dst_folder, $storage)
 
-Convert MHT file (located on storage) to PDF format and upload resulting file to storage. 
+Convert MHT file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7938,7 +7938,7 @@ Name | Type | Description  | Notes
 ## **putPclInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putPclInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert PCL file (located on storage) to PDF format and upload resulting file to storage. 
+Convert PCL file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -7961,7 +7961,7 @@ Name | Type | Description  | Notes
 ## **putPdfAInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putPdfAInStorageToPdf($name, $src_path, $dst_folder, $dont_optimize, $storage)
 
-Convert PDFA file (located on storage) to PDF format and upload resulting file to storage. 
+Convert PDFA file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -8852,7 +8852,7 @@ Name | Type | Description  | Notes
 ## **putPsInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putPsInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert PS file (located on storage) to PDF format and upload resulting file to storage. 
+Convert PS file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9262,7 +9262,7 @@ Name | Type | Description  | Notes
 ## **putSvgInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putSvgInStorageToPdf($name, $src_path, $adjust_page_size, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $dst_folder, $storage)
 
-Convert SVG file (located on storage) to PDF format and upload resulting file to storage. 
+Convert SVG file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9317,7 +9317,7 @@ Name | Type | Description  | Notes
 ## **putTeXInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putTeXInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert TeX file (located on storage) to PDF format and upload resulting file to storage. 
+Convert TeX file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9459,7 +9459,7 @@ Name | Type | Description  | Notes
 ## **putWebInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putWebInStorageToPdf($name, $url, $height, $width, $is_landscape, $margin_left, $margin_bottom, $margin_right, $margin_top, $dst_folder, $storage)
 
-Convert web page to PDF format and upload resulting file to storage. 
+Convert web page to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9534,7 +9534,7 @@ Name | Type | Description  | Notes
 ## **putXmlInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putXmlInStorageToPdf($name, $src_path, $xsl_file_path, $dst_folder, $storage)
 
-Convert XML file (located on storage) to PDF format and upload resulting file to storage. 
+Convert XML file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9558,7 +9558,7 @@ Name | Type | Description  | Notes
 ## **putXpsInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putXpsInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert XPS file (located on storage) to PDF format and upload resulting file to storage. 
+Convert XPS file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
@@ -9581,7 +9581,7 @@ Name | Type | Description  | Notes
 ## **putXslFoInStorageToPdf**
 > \Aspose\PDF\Model\AsposeResponse putXslFoInStorageToPdf($name, $src_path, $dst_folder, $storage)
 
-Convert XslFo file (located on storage) to PDF format and upload resulting file to storage. 
+Convert XslFo file (located on storage) to PDF format and upload resulting file to storage.
 
 ### Parameters
 Name | Type | Description  | Notes
