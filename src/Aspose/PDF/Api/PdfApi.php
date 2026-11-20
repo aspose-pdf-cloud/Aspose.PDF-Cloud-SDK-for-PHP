@@ -47855,10 +47855,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -47899,10 +47899,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -47985,10 +47985,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -48016,10 +48016,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -48077,10 +48077,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -51097,7 +51097,7 @@ class PdfApi
      * Converts PDF document (located on storage) to TIFF format and returns resulting file in response content
      *
      * @param  string $name The document name. (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -51147,7 +51147,7 @@ class PdfApi
      * Converts PDF document (located on storage) to TIFF format and returns resulting file in response content
      *
      * @param  string $name The document name. (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -51239,7 +51239,7 @@ class PdfApi
      * Converts PDF document (located on storage) to TIFF format and returns resulting file in response content
      *
      * @param  string $name The document name. (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -51276,7 +51276,7 @@ class PdfApi
      * Converts PDF document (located on storage) to TIFF format and returns resulting file in response content
      *
      * @param  string $name The document name. (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -51343,7 +51343,7 @@ class PdfApi
      * Create request for operation 'getPdfInStorageToTiff'
      *
      * @param  string $name The document name. (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -69833,8 +69833,8 @@ class PdfApi
      * Rsize PDF document.
      *
      * @param  string $name The document name. (required)
-     * @param  float $height Page Height (required)
-     * @param  float $width Page width (required)
+     * @param  double $height Page Height (required)
+     * @param  double $width Page width (required)
      * @param  string $pages Comma separated list of pages and page ranges. (Example: 1,3-5,8) (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -69872,8 +69872,8 @@ class PdfApi
      * Rsize PDF document.
      *
      * @param  string $name The document name. (required)
-     * @param  float $height Page Height (required)
-     * @param  float $width Page width (required)
+     * @param  double $height Page Height (required)
+     * @param  double $width Page width (required)
      * @param  string $pages Comma separated list of pages and page ranges. (Example: 1,3-5,8) (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -69953,8 +69953,8 @@ class PdfApi
      * Rsize PDF document.
      *
      * @param  string $name The document name. (required)
-     * @param  float $height Page Height (required)
-     * @param  float $width Page width (required)
+     * @param  double $height Page Height (required)
+     * @param  double $width Page width (required)
      * @param  string $pages Comma separated list of pages and page ranges. (Example: 1,3-5,8) (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -69979,8 +69979,8 @@ class PdfApi
      * Rsize PDF document.
      *
      * @param  string $name The document name. (required)
-     * @param  float $height Page Height (required)
-     * @param  float $width Page width (required)
+     * @param  double $height Page Height (required)
+     * @param  double $width Page width (required)
      * @param  string $pages Comma separated list of pages and page ranges. (Example: 1,3-5,8) (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -70035,8 +70035,8 @@ class PdfApi
      * Create request for operation 'postDocumentPagesResize'
      *
      * @param  string $name The document name. (required)
-     * @param  float $height Page Height (required)
-     * @param  float $width Page width (required)
+     * @param  double $height Page Height (required)
+     * @param  double $width Page width (required)
      * @param  string $pages Comma separated list of pages and page ranges. (Example: 1,3-5,8) (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -74300,10 +74300,10 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  int $page_number The page number. (required)
-     * @param  float $llx Coordinate lower left X. (required)
-     * @param  float $lly Coordinate lower left Y. (required)
-     * @param  float $urx Coordinate upper right X. (required)
-     * @param  float $ury Coordinate upper right Y. (required)
+     * @param  double $llx Coordinate lower left X. (required)
+     * @param  double $lly Coordinate lower left Y. (required)
+     * @param  double $urx Coordinate upper right X. (required)
+     * @param  double $ury Coordinate upper right Y. (required)
      * @param  string $image_file_path Path to image file if specified. Request content is used otherwise. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -74342,10 +74342,10 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  int $page_number The page number. (required)
-     * @param  float $llx Coordinate lower left X. (required)
-     * @param  float $lly Coordinate lower left Y. (required)
-     * @param  float $urx Coordinate upper right X. (required)
-     * @param  float $ury Coordinate upper right Y. (required)
+     * @param  double $llx Coordinate lower left X. (required)
+     * @param  double $lly Coordinate lower left Y. (required)
+     * @param  double $urx Coordinate upper right X. (required)
+     * @param  double $ury Coordinate upper right Y. (required)
      * @param  string $image_file_path Path to image file if specified. Request content is used otherwise. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -74426,10 +74426,10 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  int $page_number The page number. (required)
-     * @param  float $llx Coordinate lower left X. (required)
-     * @param  float $lly Coordinate lower left Y. (required)
-     * @param  float $urx Coordinate upper right X. (required)
-     * @param  float $ury Coordinate upper right Y. (required)
+     * @param  double $llx Coordinate lower left X. (required)
+     * @param  double $lly Coordinate lower left Y. (required)
+     * @param  double $urx Coordinate upper right X. (required)
+     * @param  double $ury Coordinate upper right Y. (required)
      * @param  string $image_file_path Path to image file if specified. Request content is used otherwise. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -74455,10 +74455,10 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  int $page_number The page number. (required)
-     * @param  float $llx Coordinate lower left X. (required)
-     * @param  float $lly Coordinate lower left Y. (required)
-     * @param  float $urx Coordinate upper right X. (required)
-     * @param  float $ury Coordinate upper right Y. (required)
+     * @param  double $llx Coordinate lower left X. (required)
+     * @param  double $lly Coordinate lower left Y. (required)
+     * @param  double $urx Coordinate upper right X. (required)
+     * @param  double $ury Coordinate upper right Y. (required)
      * @param  string $image_file_path Path to image file if specified. Request content is used otherwise. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -74514,10 +74514,10 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  int $page_number The page number. (required)
-     * @param  float $llx Coordinate lower left X. (required)
-     * @param  float $lly Coordinate lower left Y. (required)
-     * @param  float $urx Coordinate upper right X. (required)
-     * @param  float $ury Coordinate upper right Y. (required)
+     * @param  double $llx Coordinate lower left X. (required)
+     * @param  double $lly Coordinate lower left Y. (required)
+     * @param  double $urx Coordinate upper right X. (required)
+     * @param  double $ury Coordinate upper right Y. (required)
      * @param  string $image_file_path Path to image file if specified. Request content is used otherwise. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
@@ -87818,7 +87818,7 @@ class PdfApi
      * Split document into ranges.
      *
      * @param  string $name The document name. (required)
-     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (optional)
+     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $password Base64 encoded password. (optional)
@@ -87827,7 +87827,7 @@ class PdfApi
      * @throws \InvalidArgumentException
      * @return \Aspose\PDF\Model\SplitResultResponse
      */
-    public function postSplitRangePdfDocument($name, $options = null, $storage = null, $folder = null, $password = null)
+    public function postSplitRangePdfDocument($name, $options, $storage = null, $folder = null, $password = null)
     {
         try
         {
@@ -87855,7 +87855,7 @@ class PdfApi
      * Split document into ranges.
      *
      * @param  string $name The document name. (required)
-     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (optional)
+     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $password Base64 encoded password. (optional)
@@ -87864,7 +87864,7 @@ class PdfApi
      * @throws \InvalidArgumentException
      * @return array of \Aspose\PDF\Model\SplitResultResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postSplitRangePdfDocumentWithHttpInfo($name, $options = null, $storage = null, $folder = null, $password = null)
+    public function postSplitRangePdfDocumentWithHttpInfo($name, $options, $storage = null, $folder = null, $password = null)
     {
         $returnType = '\Aspose\PDF\Model\SplitResultResponse';
         $request = $this->postSplitRangePdfDocumentRequest($name, $options, $storage, $folder, $password);
@@ -87934,7 +87934,7 @@ class PdfApi
      * Split document into ranges.
      *
      * @param  string $name The document name. (required)
-     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (optional)
+     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $password Base64 encoded password. (optional)
@@ -87942,7 +87942,7 @@ class PdfApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postSplitRangePdfDocumentAsync($name, $options = null, $storage = null, $folder = null, $password = null)
+    public function postSplitRangePdfDocumentAsync($name, $options, $storage = null, $folder = null, $password = null)
     {
         return $this->postSplitRangePdfDocumentAsyncWithHttpInfo($name, $options, $storage, $folder, $password)
             ->then(
@@ -87958,7 +87958,7 @@ class PdfApi
      * Split document into ranges.
      *
      * @param  string $name The document name. (required)
-     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (optional)
+     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $password Base64 encoded password. (optional)
@@ -87966,7 +87966,7 @@ class PdfApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postSplitRangePdfDocumentAsyncWithHttpInfo($name, $options = null, $storage = null, $folder = null, $password = null)
+    public function postSplitRangePdfDocumentAsyncWithHttpInfo($name, $options, $storage = null, $folder = null, $password = null)
     {
         $returnType = '\Aspose\PDF\Model\SplitResultResponse';
         $request = $this->postSplitRangePdfDocumentRequest($name, $options, $storage, $folder, $password);
@@ -88012,7 +88012,7 @@ class PdfApi
      * Create request for operation 'postSplitRangePdfDocument'
      *
      * @param  string $name The document name. (required)
-     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (optional)
+     * @param  \Aspose\PDF\Model\SplitRangePdfOptions $options The splitting options. (required)
      * @param  string $storage The document storage. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $password Base64 encoded password. (optional)
@@ -88020,12 +88020,18 @@ class PdfApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function postSplitRangePdfDocumentRequest($name, $options = null, $storage = null, $folder = null, $password = null)
+    protected function postSplitRangePdfDocumentRequest($name, $options, $storage = null, $folder = null, $password = null)
     {
         // verify the required parameter 'name' is set
         if ($name === null) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $name when calling postSplitRangePdfDocument'
+            );
+        }
+        // verify the required parameter 'options' is set
+        if ($options === null) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $options when calling postSplitRangePdfDocument'
             );
         }
 
@@ -107934,10 +107940,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
      * @param  \SplFileObject $file A file to be converted. (optional)
@@ -107978,10 +107984,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
      * @param  \SplFileObject $file A file to be converted. (optional)
@@ -108064,10 +108070,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
      * @param  \SplFileObject $file A file to be converted. (optional)
@@ -108095,10 +108101,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
      * @param  \SplFileObject $file A file to be converted. (optional)
@@ -108156,10 +108162,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
      * @param  \SplFileObject $file A file to be converted. (optional)
@@ -110870,7 +110876,7 @@ class PdfApi
      * Converts PDF document (in request content) to TIFF format and uploads resulting file to storage.
      *
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -110920,7 +110926,7 @@ class PdfApi
      * Converts PDF document (in request content) to TIFF format and uploads resulting file to storage.
      *
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -111012,7 +111018,7 @@ class PdfApi
      * Converts PDF document (in request content) to TIFF format and uploads resulting file to storage.
      *
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -111049,7 +111055,7 @@ class PdfApi
      * Converts PDF document (in request content) to TIFF format and uploads resulting file to storage.
      *
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -111116,7 +111122,7 @@ class PdfApi
      * Create request for operation 'putPdfInRequestToTiff'
      *
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -113004,10 +113010,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -113049,10 +113055,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -113136,10 +113142,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -113168,10 +113174,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -113230,10 +113236,10 @@ class PdfApi
      * @param  string $format Allows to specify .doc or .docx file format. (optional)
      * @param  int $image_resolution_x Image resolution X. (optional)
      * @param  int $image_resolution_y Image resolution Y. (optional)
-     * @param  float $max_distance_between_text_lines Max distance between text lines. (optional)
+     * @param  double $max_distance_between_text_lines Max distance between text lines. (optional)
      * @param  string $mode Allows to control how a PDF document is converted into a word processing document. (optional)
      * @param  bool $recognize_bullets Recognize bullets. (optional)
-     * @param  float $relative_horizontal_proximity Relative horizontal proximity. (optional)
+     * @param  double $relative_horizontal_proximity Relative horizontal proximity. (optional)
      * @param  string $folder The document folder. (optional)
      * @param  string $storage The document storage. (optional)
      * @param  string $password The password (Base64). (optional)
@@ -116052,7 +116058,7 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -116103,7 +116109,7 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -116196,7 +116202,7 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -116234,7 +116240,7 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)
@@ -116302,7 +116308,7 @@ class PdfApi
      *
      * @param  string $name The document name. (required)
      * @param  string $out_path Full resulting filename (ex. /folder1/folder2/result.tiff) (required)
-     * @param  float $brightness Image brightness. (optional)
+     * @param  double $brightness Image brightness. (optional)
      * @param  string $compression Tiff compression. Possible values are: LZW, CCITT4, CCITT3, RLE, None. (optional)
      * @param  string $color_depth Image color depth. Possible valuse are: Default, Format8bpp, Format4bpp, Format1bpp. (optional)
      * @param  int $left_margin Left image margin. (optional)

@@ -6590,7 +6590,7 @@ Split document into ranges.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **$name** | **string** | The document name. | 
-**$options** | [**\Aspose\PDF\Model\SplitRangePdfOptions**](SplitRangePdfOptions.md) | The splitting options. | [optional]
+**$options** | [**\Aspose\PDF\Model\SplitRangePdfOptions**](SplitRangePdfOptions.md) | The splitting options. | 
 **$storage** | **string** | The document storage. | [optional]
 **$folder** | **string** | The document folder. | [optional]
 **$password** | **string** | Base64 encoded password. | [optional]

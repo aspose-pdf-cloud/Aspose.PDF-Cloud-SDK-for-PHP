@@ -53,7 +53,7 @@ class GraphInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'line_width' => 'float',
+        'line_width' => 'double',
         'color' => '\Aspose\PDF\Model\Color',
         'dash_array' => 'int[]',
         'dash_phase' => 'int',
@@ -72,7 +72,7 @@ class GraphInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'line_width' => 'float',
+        'line_width' => 'double',
         'color' => null,
         'dash_array' => 'int32',
         'dash_phase' => 'int32',
@@ -264,7 +264,7 @@ class GraphInfo implements ModelInterface, ArrayAccess
     /**
      * Gets line_width
      *
-     * @return float
+     * @return double
      */
     public function getLineWidth()
     {
@@ -274,7 +274,7 @@ class GraphInfo implements ModelInterface, ArrayAccess
     /**
      * Sets line_width
      *
-     * @param float $line_width Gets or sets a float value that indicates the line width of the graph.
+     * @param double $line_width Gets or sets a float value that indicates the line width of the graph.
      *
      * @return $this
      */

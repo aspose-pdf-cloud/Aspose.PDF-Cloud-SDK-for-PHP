@@ -54,8 +54,8 @@ class Table extends LinkElement
         'alignment' => '\Aspose\PDF\Model\HorizontalAlignment',
         'horizontal_alignment' => '\Aspose\PDF\Model\HorizontalAlignment',
         'vertical_alignment' => '\Aspose\PDF\Model\VerticalAlignment',
-        'top' => 'float',
-        'left' => 'float',
+        'top' => 'double',
+        'left' => 'double',
         'default_cell_text_state' => '\Aspose\PDF\Model\TextState',
         'default_cell_padding' => '\Aspose\PDF\Model\MarginInfo',
         'border' => '\Aspose\PDF\Model\BorderInfo',
@@ -85,8 +85,8 @@ class Table extends LinkElement
         'alignment' => null,
         'horizontal_alignment' => null,
         'vertical_alignment' => null,
-        'top' => 'float',
-        'left' => 'float',
+        'top' => 'double',
+        'left' => 'double',
         'default_cell_text_state' => null,
         'default_cell_padding' => null,
         'border' => null,
@@ -411,7 +411,7 @@ class Table extends LinkElement
     /**
      * Gets top
      *
-     * @return float
+     * @return double
      */
     public function getTop()
     {
@@ -421,7 +421,7 @@ class Table extends LinkElement
     /**
      * Sets top
      *
-     * @param float $top Gets or sets the table top coordinate.
+     * @param double $top Gets or sets the table top coordinate.
      *
      * @return $this
      */
@@ -435,7 +435,7 @@ class Table extends LinkElement
     /**
      * Gets left
      *
-     * @return float
+     * @return double
      */
     public function getLeft()
     {
@@ -445,7 +445,7 @@ class Table extends LinkElement
     /**
      * Sets left
      *
-     * @param float $left Gets or sets the table left coordinate.
+     * @param double $left Gets or sets the table left coordinate.
      *
      * @return $this
      */

@@ -53,7 +53,7 @@ class TextState implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'font_size' => 'float',
+        'font_size' => 'double',
         'font' => 'string',
         'foreground_color' => '\Aspose\PDF\Model\Color',
         'background_color' => '\Aspose\PDF\Model\Color',
@@ -71,7 +71,7 @@ class TextState implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'font_size' => 'float',
+        'font_size' => 'double',
         'font' => null,
         'foreground_color' => null,
         'background_color' => null,
@@ -270,7 +270,7 @@ class TextState implements ModelInterface, ArrayAccess
     /**
      * Gets font_size
      *
-     * @return float
+     * @return double
      */
     public function getFontSize()
     {
@@ -280,7 +280,7 @@ class TextState implements ModelInterface, ArrayAccess
     /**
      * Sets font_size
      *
-     * @param float $font_size Gets or sets font size of the text.
+     * @param double $font_size Gets or sets font size of the text.
      *
      * @return $this
      */

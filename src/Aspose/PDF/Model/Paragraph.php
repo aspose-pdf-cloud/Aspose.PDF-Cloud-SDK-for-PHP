@@ -62,7 +62,7 @@ class Paragraph implements ModelInterface, ArrayAccess
         'bottom_margin' => 'double',
         'rectangle' => '\Aspose\PDF\Model\Rectangle',
         'rotation' => 'double',
-        'subsequent_lines_indent' => 'float',
+        'subsequent_lines_indent' => 'double',
         'vertical_alignment' => '\Aspose\PDF\Model\VerticalAlignment',
         'lines' => '\Aspose\PDF\Model\TextLine[]'
     ];
@@ -82,7 +82,7 @@ class Paragraph implements ModelInterface, ArrayAccess
         'bottom_margin' => 'double',
         'rectangle' => null,
         'rotation' => 'double',
-        'subsequent_lines_indent' => 'float',
+        'subsequent_lines_indent' => 'double',
         'vertical_alignment' => null,
         'lines' => null
     ];
@@ -492,7 +492,7 @@ class Paragraph implements ModelInterface, ArrayAccess
     /**
      * Gets subsequent_lines_indent
      *
-     * @return float
+     * @return double
      */
     public function getSubsequentLinesIndent()
     {
@@ -502,7 +502,7 @@ class Paragraph implements ModelInterface, ArrayAccess
     /**
      * Sets subsequent_lines_indent
      *
-     * @param float $subsequent_lines_indent Subsequent lines indent value.
+     * @param double $subsequent_lines_indent Subsequent lines indent value.
      *
      * @return $this
      */
