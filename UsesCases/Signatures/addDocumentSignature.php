@@ -85,10 +85,10 @@ class PdfSignatures {
             $field
         );
 
-        if ($response->code === 200) {
+        if ($response->getCode() === 200) {
             echo "appenSignature(): Signature '" . $this->config['SIGNATURE_CONTACT'] . "' successfully replaced.\n";
         } else {
-            echo "appenSignature(): Failed to replace signature. Code: " . $response->code . "\n";
+            echo "appenSignature(): Failed to replace signature. Code: " . $response->getCode() . "\n";
         }
     }
 }
