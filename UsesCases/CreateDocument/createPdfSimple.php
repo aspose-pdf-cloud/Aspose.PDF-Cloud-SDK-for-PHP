@@ -6,7 +6,7 @@ use Aspose\PDF\Configuration;
 use Aspose\PDF\Api\PdfApi;
 
 // Load credentials. Format must be {"id": "*****", "key": "****"}
-$credentials = json_decode(file_get_contents('settings/credentials.json'), true);
+$credentials = json_decode(file_get_contents(__DIR__ . '/settings/credentials.json'), true);
 
 $localFolder = "testData";
 $pdfDocument = "output_sample.pdf";
